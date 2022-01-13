@@ -1,5 +1,6 @@
 body {
   background: grey;
+  margin: 0;
 
   @media (min-width: 768px) {
     color: red;

@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index Page</title>
-    <link rel="stylesheet" href="/css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Oregano"
-      rel="stylesheet"
-    />
+    {{> head }}
+    <title>Rustica</title>
   </head>
   <body>
-    {{> header }}
-    <h1>Hello World Test!</h1>
+    {{> head-row }}
+    <header class="header">
+      <div class="hero">
+        <h1 class="hero-title">Rustica</h1>
+        <h2 class="hero-title">Bio und Fair seit 1991</h2>
+        <img class="hero-img" src="/images/coffee-mobile.jpg" alt="drei Kaffeetassen, die zusammen gehalten werden">
+      </div>
+    </header>
     <main>
       <a href="/sub-page/">Link to Subpage</a>
       <div>Home</div>

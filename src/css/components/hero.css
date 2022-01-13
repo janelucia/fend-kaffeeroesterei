@@ -1,5 +1,5 @@
 .hero {
-  color: red;
+  color: white;
   position: relative;
 }
 
@@ -12,6 +12,8 @@
 }
 
 .hero-img {
-  filter: grayscale(50%);
+  filter: grayscale(30%);
   z-index: 5;
+  height: 75vh;
+  object-fit: cover;
 }
