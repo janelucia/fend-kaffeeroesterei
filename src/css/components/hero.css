@@ -1,19 +1,73 @@
+/* TODO: 
+* Button fliegt beim klicken aus dem Bild raus - wieso?
+* warum passt das Bild nicht richtig rein im Status als Background img?
+* nochmal die Zahlen überprüfen, wegen der einzelnen Höhen, etc. */
+
 .hero {
-  color: white;
+  height: 75vh;
+  width: 100%;
   position: relative;
+  background-image: url("../../images/coffee-mobile.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
+  color: white;
   position: absolute;
-  top: 50%;
   right: 50%;
-  transform: translate(50%,-50%);
+  top: 50%;
   z-index: 10;
 }
 
-.hero-img {
+h1.hero-title {
+  font-size: 9vh;
+  font-weight: 900;
+  height: 8.8vh;
+  left: 25vw;
+  line-height: 8.8vh;
+  top: 23.5vh;
+  transform: translate(-0%, 0%);
+  width: 25.4vw;
+}
+
+h2.hero-title {
+  font-size: 2.7vh;
+  font-weight: 300;
+  height: 2.5vh;
+  left: 30.5vw;
+  line-height: 2.5vh;
+  top: 35vh;
+  transform: translate(-0%, 100%);
+  width: 55vw;
+}
+
+/* .hero-img {
   filter: grayscale(30%);
-  z-index: 5;
-  height: 75vh;
+  height: 70vh;
+  width: 46vw;
   object-fit: cover;
+  z-index: 5;
+} */
+
+.shop-button {
+  background: #1A1A1A;
+  border-radius: 0.6vh;
+  border: 0.2vh solid #1A1A1A;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7vh;
+  left: 35vw;
+  line-height: 2.1vh;
+  padding: 1.8vh 10.8vw;
+  position: absolute;
+  text-decoration: none;
+  top: 58vh;
+} 
+.shop-button:hover {
+	background-color:#1A1A1A;
+}
+.shop-button:active {
+	position:relative;
+	top:1px;
 }

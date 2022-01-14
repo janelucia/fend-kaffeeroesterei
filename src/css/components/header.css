@@ -1,0 +1,13 @@
+.header-logo {
+   position: absolute;
+   z-index: 6;
+   left: 24px;
+   top: 10px;
+}
+
+.cafe-rustica {
+   position: relative;
+   width: 46vh;
+   object-fit: cover;
+   z-index: 5;
+}

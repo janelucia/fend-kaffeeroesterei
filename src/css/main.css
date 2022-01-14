@@ -1,4 +1,6 @@
 @import "variables.css";
 @import "base.css";
 @import "components/hero.css";
-@import "components/head-row.css"
+@import "components/header.css";
+@import "components/cafe-informationen.css";
+@import "components/content.css"

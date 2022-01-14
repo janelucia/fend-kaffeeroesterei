@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    {{> head }}
+    {{> html-head }}
     <title>Rustica</title>
   </head>
   <body>
-    {{> head-row }}
-    <header class="header">
+    <header>
       <div class="hero">
+        {{> head-row }}
         <h1 class="hero-title">Rustica</h1>
         <h2 class="hero-title">Bio und Fair seit 1991</h2>
-        <img class="hero-img" src="/images/coffee-mobile.jpg" alt="drei Kaffeetassen, die zusammen gehalten werden">
+        <!-- <img class="hero-img" src="/images/coffee-mobile.jpg" alt="drei Kaffeetassen, die zusammen gehalten werden"> -->
+        <a href="sub-page/shop.html" class="shop-button">zum Shop</a>
       </div>
     </header>
     <main>
-      <a href="/sub-page/">Link to Subpage</a>
-      <div>Home</div>
+      <div>
+        {{> cafe-informationen}}
+        <img class="img-seite-rechts" src="images/coffeeshop-mobile.jpg" alt="Kaffeeshop Rustica">
+      </div>
     </main>
+    <footer>
+        <a href="sub-page/cafe.html">Café</a>
+        <div>Home</div>
+    </footer>
     <script src="/js/index.js" type="module"></script>
   </body>
 </html>
