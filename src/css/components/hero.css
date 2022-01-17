@@ -1,69 +1,61 @@
-/* TODO: 
+/* TODO:
 * Button fliegt beim klicken aus dem Bild raus - wieso?
 * warum passt das Bild nicht richtig rein im Status als Background img?
 * nochmal die Zahlen überprüfen, wegen der einzelnen Höhen, etc. */
 
 .hero {
+  align-items: center;
+  justify-content: center;
   height: 75vh;
-  width: 100%;
-  position: relative;
-  background-image: url("../../images/coffee-mobile.jpg"); 
+  width: 377px;
+  display: flex;
+  flex-flow: column wrap;
+  background-image: url("../../images/coffee-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
   color: white;
-  position: absolute;
-  right: 50%;
-  top: 50%;
   z-index: 10;
 }
 
 h1.hero-title {
-  font-size: 9vh;
+  font-size: 64px;
   font-weight: 900;
-  height: 8.8vh;
-  left: 25vw;
-  line-height: 8.8vh;
-  top: 23.5vh;
-  transform: translate(-0%, 0%);
-  width: 25.4vw;
+  /* height: 8.8vh; */
+  /* line-height: 8.8vh; */
+  /* transform: translate(-0%, 0%); */
+  /* margin: 18vh 0 0 0; */
+  /* margin: 140px 0; */
+  /* left: 25vw;
+  top: 23.5vh; */
 }
 
 h2.hero-title {
-  font-size: 2.7vh;
+  font-size: 18px;
   font-weight: 300;
-  height: 2.5vh;
-  left: 30.5vw;
-  line-height: 2.5vh;
-  top: 35vh;
-  transform: translate(-0%, 100%);
-  width: 55vw;
+  /* height: 2.5vh;
+  line-height: 2.5vh; */
+  /* transform: translate(-0%, 100%); */
+  /* left: 30.5vw;
+  top: 35vh; */
 }
 
-/* .hero-img {
-  filter: grayscale(30%);
-  height: 70vh;
-  width: 46vw;
-  object-fit: cover;
-  z-index: 5;
-} */
-
 .shop-button {
+  /* margin:auto 0; */
   background: #1A1A1A;
-  border-radius: 0.6vh;
-  border: 0.2vh solid #1A1A1A;
+  border-radius: 5px;
+  border: 2px solid #1A1A1A;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.7vh;
-  left: 35vw;
-  line-height: 2.1vh;
-  padding: 1.8vh 10.8vw;
-  position: absolute;
+  font-size: 14px;
+  padding: 15px 50px;
+  /* margin: 90px 0 0 0; */
+  /* margin: 12vh 0 0 0; */
   text-decoration: none;
-  top: 58vh;
-} 
+}
 .shop-button:hover {
 	background-color:#1A1A1A;
 }

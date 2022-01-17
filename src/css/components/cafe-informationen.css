@@ -20,10 +20,6 @@
     row-gap: 30px;
 }
 
-.flex1 {
-    width: 17.5vh;
-}
-
-.flex2 {
-    width: 14vh;
+.cafe-informationen-p-flex {
+    padding-right: 50px;
 }
