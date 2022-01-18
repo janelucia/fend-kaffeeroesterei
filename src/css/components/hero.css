@@ -1,16 +1,13 @@
 /* TODO:
-* Button fliegt beim klicken aus dem Bild raus - wieso?
-* warum passt das Bild nicht richtig rein im Status als Background img?
-* nochmal die Zahlen überprüfen, wegen der einzelnen Höhen, etc. */
+* Button fliegt beim klicken aus dem Bild raus - wieso? */
 
 .hero {
   align-items: center;
   justify-content: center;
-  height: 75vh;
-  width: 377px;
+  height: 500px;
   display: flex;
   flex-flow: column wrap;
-  background-image: url("../../images/coffee-mobile.jpg");
+  background-image: url("../../images/mobile-img/header-coffee-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -18,42 +15,27 @@
 
 .hero-title {
   color: white;
-  z-index: 10;
 }
 
-h1.hero-title {
-  font-size: 64px;
-  font-weight: 900;
-  /* height: 8.8vh; */
-  /* line-height: 8.8vh; */
-  /* transform: translate(-0%, 0%); */
-  /* margin: 18vh 0 0 0; */
-  /* margin: 140px 0; */
-  /* left: 25vw;
-  top: 23.5vh; */
+.hero-title h1 {
+  margin: 128px 0 0 0;
 }
 
-h2.hero-title {
+.hero-title h2 {
   font-size: 18px;
   font-weight: 300;
-  /* height: 2.5vh;
-  line-height: 2.5vh; */
-  /* transform: translate(-0%, 100%); */
-  /* left: 30.5vw;
-  top: 35vh; */
+  margin: 0;
 }
 
 .shop-button {
-  /* margin:auto 0; */
+  margin: 80px 0 0 0;
   background: #1A1A1A;
   border-radius: 5px;
   border: 2px solid #1A1A1A;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  padding: 15px 50px;
-  /* margin: 90px 0 0 0; */
-  /* margin: 12vh 0 0 0; */
+  padding: 14px 48px;
   text-decoration: none;
 }
 .shop-button:hover {

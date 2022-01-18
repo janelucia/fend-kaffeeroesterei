@@ -1,25 +1,17 @@
-.cafe-informationen {
-    margin: 7vh 3vh;
-    width: 41vh;
-}
-.cafe-informationen-h1 {
-    font-weight: 900;
-    font-size: 4.2vh;
-    line-height: 4vh;
+.cafe-informationen{
+    padding: 60px 24px 40px 24px;
 }
 
-.cafe-informationen-p {
-    font-weight: 400;
-    font-size: 1.6vh;
-    line-height: 2.1vh;
-}
+/* .cafe-informationen-content {
+    width: 327px; 
+} */
 
-.cafe-flex {
+.cafe-informationen-content-flex {
     display: flex;
     align-items: flex-start;
-    row-gap: 30px;
+    row-gap: 15px;
 }
 
-.cafe-informationen-p-flex {
-    padding-right: 50px;
+.cafe-informationen-content-p-flex {
+    padding-right: 37px;
 }

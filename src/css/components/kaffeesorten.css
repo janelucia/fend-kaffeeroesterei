@@ -1,0 +1,61 @@
+.kaffeesorten {
+    background: #1A1A1A;
+    color: #FFFFFF;
+    padding: 60px 24px;
+}
+
+div.kaffeesorten h2 {
+    margin: 0;
+}
+
+.kaffeesorten-flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 40px 0;
+}
+
+.kaffeesorten-content {
+    color: #FFFFFF;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 40px;
+}
+
+.kaffeesorten-content-img {
+    width: 155px;
+    height: 208px;
+}
+
+.kaffeesorten-content-name{
+    margin: 11px 0 0 0;
+}
+
+.kaffeesorten-content-price {
+    margin: 0;
+    color: #737373; 
+}
+
+/*TODO: svg imgs weiß machen*/
+
+.kaffeesorten-content-icons{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.icon-coffee-beans {
+    width: 12px;
+    height: 14px;
+    margin-right: 9px;
+}
+
+.icon-french-press {
+    width: 10px;
+    height: 12px;
+    margin-right: 9px;
+}
+
+.icon-coffee-shovel {
+    width: 12px;
+    height: 13px;
+}

@@ -2,18 +2,18 @@ body {
   background: #E5E5E5;
   font-family:'Roboto', sans-serif;
   margin: 0;
-
+  /* width: 380px; */
   @media (min-width: 768px) {
     color: red;
   }
 }
 
 main {
-  margin: 0 auto;
+  margin: 0;
   max-width: 1440px;
 
   & div {
-    color: black;
+    /* color: black; */
 
     @media (min-width: 768px) {
       color: var(--div-color);
@@ -26,6 +26,31 @@ img {
   height: auto;
 }
 
+h1 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
 h2 {
-  font-size: var(--h2-font-size);
+  line-height: 34px;
+  font-size: 36px;
+  /* font-size: var(--h2-font-size); */
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+h4{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21,09px;
+}
+
+p {
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 400;
 }

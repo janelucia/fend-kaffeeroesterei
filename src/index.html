@@ -9,18 +9,38 @@
       <div class="hero">
         {{> head-row }}
           <div class="hero-title">
-            <h1 class="hero-title">Rustica</h1>
+            <h1>Rustica</h1>
           </div>
           <div class="hero-title">
-            <h2 class="hero-title">Bio und Fair seit 1991</h2>
+            <h2>Bio und Fair seit 1991</h2>
           </div>
         <a href="sub-page/shop.html" class="shop-button">zum Shop</a>
       </div>
     </header>
     <main>
-      <div>
+      <div class="cafe-informationen">
         {{> cafe-informationen}}
-        <img class="img-seite-rechts" src="images/coffeeshop-mobile.jpg" alt="Kaffeeshop Rustica">
+        <div class="img-seite-rechts">
+          <img id="kaffeeshop-rustica" src="images/mobile-img/coffee-shop-mobile.jpg" alt="Kaffeeshop Rustica">
+        </div>
+      </div>
+      <div class="bio-fair">
+        <div>
+          <h2>Bio und Fair</h2>
+          <p class="content-p">Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das alles in bester Bio Qualität</p>
+        </div>
+        <div id="kaffeepflanze">
+          <img src="images/mobile-img/coffee-plant-mobile.jpg" alt="Foto von einer Kaffeepflanze">
+        </div>
+      </div>
+      <div class="kaffeesorten">
+        <h2>Entdecke unsere Kaffee Sorten</h2>
+        <div class="kaffeesorten-flex">
+          {{> kaffeesorten }}
+          {{> kaffeesorten }}
+          {{> kaffeesorten }}
+          {{> kaffeesorten }}
+        </div>
       </div>
     </main>
     <footer>
