@@ -2,6 +2,15 @@
    position: absolute;
    left: 24px;
    top: 10px;
+   
+   & svg {
+      width: 35px;
+      height: 35px;
+   }
+
+   & svg path {
+      fill: white;
+   }
 }
 
 .header-menu {

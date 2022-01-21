@@ -1,11 +1,24 @@
 .img-seite-rechts {
     text-align: right;
+    
+    @media (min-width: 376px) {
+        & img {
+            width: 241px;
+        }
+    }
 }
 
 .bio-fair {
     margin: 0 24px 63px 24px;
+
+    & h3 {
+        margin:0;
+    }
 }
 
 #kaffeepflanze {
     margin-top: 40px;
+    @media (min-width: 376px) {
+        width: 241px;
+    }
 }

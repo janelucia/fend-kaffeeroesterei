@@ -4,7 +4,7 @@
     padding: 60px 24px;
 }
 
-div.kaffeesorten h2 {
+div.kaffeesorten h3 {
     margin: 0;
 }
 
@@ -36,26 +36,19 @@ div.kaffeesorten h2 {
     color: #737373; 
 }
 
-/*TODO: svg imgs weiß machen*/
-
 .kaffeesorten-content-icons{
     display: flex;
     flex-flow: row wrap;
+    
+    & svg path {
+        fill: #1A1A1A;
+    }
 }
 
-.icon-coffee-beans {
-    width: 12px;
-    height: 14px;
+.icon-coffee-beans svg {
     margin-right: 9px;
 }
 
-.icon-french-press {
-    width: 10px;
-    height: 12px;
+.icon-french-press svg {
     margin-right: 9px;
-}
-
-.icon-coffee-shovel {
-    width: 12px;
-    height: 13px;
 }

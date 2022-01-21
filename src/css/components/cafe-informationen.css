@@ -2,9 +2,9 @@
     padding: 60px 24px 40px 24px;
 }
 
-/* .cafe-informationen-content {
-    width: 327px; 
-} */
+.cafe-informationen-content h3 {
+    margin:0;
+}
 
 .cafe-informationen-content-flex {
     display: flex;

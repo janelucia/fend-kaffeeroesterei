@@ -4,10 +4,10 @@
 .hero {
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: 75vh;
   display: flex;
   flex-flow: column wrap;
-  background-image: url("../../images/mobile-img/header-coffee-mobile.jpg");
+  background-image: url(../../images/header-coffee.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
