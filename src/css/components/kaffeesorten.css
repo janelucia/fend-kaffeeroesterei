@@ -2,6 +2,8 @@
     background: #1A1A1A;
     color: #FFFFFF;
     padding: 60px 24px;
+    display: flex;
+    flex-direction: column;
 }
 
 div.kaffeesorten h3 {
@@ -12,6 +14,7 @@ div.kaffeesorten h3 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    column-gap: 16px;
     margin: 40px 0;
 }
 

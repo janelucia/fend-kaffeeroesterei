@@ -7,10 +7,14 @@
   height: 75vh;
   display: flex;
   flex-flow: column wrap;
-  background-image: url(../../images/header-coffee.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/header-coffee.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-width: 992px) {
+    height: 65vh;  
+  }
 }
 
 .hero-title {
@@ -22,7 +26,6 @@
 }
 
 .hero-title h2 {
-  font-size: 18px;
   font-weight: 300;
   margin: 0;
 }
@@ -34,7 +37,7 @@
   border: 2px solid #1A1A1A;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 0.88rem;
   padding: 14px 48px;
   text-decoration: none;
 }
