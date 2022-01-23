@@ -5,14 +5,17 @@
     <title>Rustica</title>
   </head>
   <body>
-    <header>
+    <header id="header-cafe">
       {{> head-row }}
-      <img class="cafe-rustica" src="../images/mobile-img/header-coffeeshop-mobile.jpg" alt="Kaffeeshop von Rustica">
     </header>
     <main>
       {{> cafe-informationen}}
+      <div class="komm-vorbei">
+        {{> komm-vorbei }}
+      </div>
     </main>
     <footer>
+      {{> footer }}
       <a href="/">Home Link</a>
     </footer>
     <script src="/js/index.js" type="module"></script>
