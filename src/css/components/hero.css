@@ -11,6 +11,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  row-gap: 150px;
 
   @media (min-width: 992px) {
     height: 65vh;  
@@ -19,32 +20,19 @@
 
 .hero-title {
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+
+  & h1 {
+    margin: 0;
+  }
+  
+  & h2 {
+    font-weight: 300;
+    margin: 0;
+  }
 }
 
-.hero-title h1 {
-  margin: 128px 0 0 0;
-}
 
-.hero-title h2 {
-  font-weight: 300;
-  margin: 0;
-}
-
-.shop-button {
-  margin: 80px 0 0 0;
-  background: #1A1A1A;
-  border-radius: 5px;
-  border: 2px solid #1A1A1A;
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.88rem;
-  padding: 14px 48px;
-  text-decoration: none;
-}
-.shop-button:hover {
-	background-color:#1A1A1A;
-}
-.shop-button:active {
-	position:relative;
-	top:1px;
-}

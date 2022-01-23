@@ -9,9 +9,5 @@
 .cafe-informationen-content-flex {
     display: flex;
     align-items: flex-start;
-    row-gap: 15px;
-}
-
-.cafe-informationen-content-p-flex {
-    padding-right: 37px;
+    column-gap: 37px;
 }

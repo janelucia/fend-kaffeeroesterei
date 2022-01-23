@@ -1,0 +1,49 @@
+.shop-button {
+  /* margin: 140px 0 0 0; */
+  background: #1A1A1A;
+  border-radius: 5px;
+  border: 2px solid #1A1A1A;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.88rem;
+  padding: 14px 48px;
+  text-decoration: none;
+}
+.shop-button:hover {
+	background-color:#1A1A1A;
+}
+.shop-button:active {
+	position:relative;
+	top:1px;
+}
+
+.das-steckt-drin-shop-button{
+    margin: 44px 0 0 0;
+}
+
+.shop-button2 {
+    align-self: center;
+    margin: 0 0 60px 0;
+}
+
+.shop-button2 a {
+    background: #1A1A1A;
+    border-radius: 5px;
+    border: 2px solid #FFFFFF;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.88rem;
+    padding: 15px 50px;
+    text-decoration: none;
+    width: 182px;
+    height: 48px;
+}
+
+.shop-button2:hover a {
+      background-color:#1A1A1A;
+}
+
+.shop-button2:active a {
+      position:relative;
+      top:1px;
+}

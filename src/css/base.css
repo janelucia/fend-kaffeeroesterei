@@ -28,6 +28,7 @@ img {
 
 h1 {
   font-size: 4rem;
+  line-height: 1.17rem;
   font-weight: 900;
 }
 
@@ -49,7 +50,24 @@ h4 {
   /* line-height: 21,09px; */
 }
 
+h5 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+h6 {
+  font-size: 1.16rem;
+  line-height: 1.17rem;
+  font-weight: 400;
+}
+
 p {
+  line-height: 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+a {
   line-height: 1.3rem;
   font-size: 0.9rem;
   font-weight: 400;

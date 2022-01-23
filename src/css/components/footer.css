@@ -1,0 +1,43 @@
+footer {
+    background-color: black;
+    padding: 61px 0 0 24px;
+    color: white;
+
+    & svg {
+    width: 35px;
+    height: 35px;
+    }
+
+    & path {
+    fill: white;
+    }
+
+    & h5 {
+        margin: 15px 0 0 0;
+    }
+
+    & h6 {
+        margin: 0;
+    }
+
+    & p {
+        margin-top: 34px;
+    }
+
+    & a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    padding: 34px 0 51px 0;
+    column-gap: 90px;
+
+    & div  {
+        display: flex;
+        flex-direction: column;
+    }
+}

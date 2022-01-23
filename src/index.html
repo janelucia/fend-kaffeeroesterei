@@ -10,11 +10,11 @@
         {{> head-row }}
           <div class="hero-title">
             <h1>Rustica</h1>
-          </div>
-          <div class="hero-title">
             <h2>Bio und Fair seit 1991</h2>
           </div>
-        <a href="sub-page/shop.html" class="shop-button">zum Shop</a>
+          <div>
+            {{> shop-button }}
+          </div>
       </div>
     </header>
     <main>
@@ -54,7 +54,7 @@
       </div>
       <div class="das-steckt-drin">
         <h3>Das steckt drin</h3>
-        <div>
+        <div class="das-steckt-drin-img">
           <img src="images/coffee-costa-rica-transparent.png" alt="Costa Rica Kaffee">
         </div>
         <div class="das-steckt-drin-icons">
@@ -71,11 +71,16 @@
             <p>Bio Qualität</p>
           </div>
         </div>
+        <div class="das-steckt-drin-shop-button">
+          {{> shop-button }}
+        </div>
+      </div>
+      <div class="komm-vorbei">
+        {{> komm-vorbei }}
       </div>
     </main>
     <footer>
-        <a href="sub-page/cafe.html">Café</a>
-        <div>Home</div>
+      {{> footer }}
     </footer>
     <script src="/js/index.js" type="module"></script>
   </body>

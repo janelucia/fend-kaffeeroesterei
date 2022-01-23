@@ -16,33 +16,6 @@
     }
 }
 
-.shop-button2 {
-    align-self: center;
-    margin: 0 0 60px 0;
-}
-
-.shop-button2 a {
-    background: #1A1A1A;
-    border-radius: 5px;
-    border: 2px solid #FFFFFF;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.88rem;
-    padding: 15px 50px;
-    text-decoration: none;
-    width: 182px;
-    height: 48px;
-}
-
-.shop-button2:hover a {
-      background-color:#1A1A1A;
-}
-
-.shop-button2:active a {
-      position:relative;
-      top:1px;
-}
-
 .herkunft {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/coffee-bags-2.jpg);
     background-position: center;
@@ -64,8 +37,8 @@
     & a {
         color: white;
         text-decoration: none;
-        font-size: 0.9rem;
-        font-weight: 400;
+        display: block;
+        padding: 20px 0 0 0;
     }
 }
 
@@ -75,19 +48,46 @@
     align-items: center;   
 }
 
+.das-steckt-drin-img {
+    width: 214px;
+    padding-bottom: 44px;
+}
+
 .das-steckt-drin-icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .das-steckt-drin-icon-einzeln {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 70px;
+    column-gap: 35px;
+
+    & img {
+    width: 45px;
+    height: 45px;
+    }
+}
+
+.komm-vorbei {
+
+    & h3 {
+        margin: 72px 0px 35px 24px;
+    }
+
+    & iframe {
+        pointer-events: none;
+    }
 }
 
 #kaffeepflanze {
     margin-top: 40px;
+
     @media (min-width: 376px) {
         width: 241px;
     }
