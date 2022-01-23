@@ -10,10 +10,12 @@
   text-decoration: none;
 }
 .shop-button:hover {
-	background-color:#1A1A1A;
+	background-color:#3A3734;
+    border: 2px solid #3A3734;
 }
 .shop-button:active {
-	position:relative;
+	background-color:#D7BE9D;
+    position:relative;
 	top:1px;
 }
 
@@ -40,10 +42,12 @@
 }
 
 .shop-button2:hover a {
-      background-color:#1A1A1A;
+    background-color:#1A1A1A;
+    border: 2px solid #1A1A1A;
 }
 
 .shop-button2:active a {
-      position:relative;
-      top:1px;
+    background-color:#D7BE9D;
+    position:relative;
+    top:1px;
 }

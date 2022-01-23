@@ -1,9 +1,13 @@
 .img-seite-rechts {
     text-align: right;
+
+    & img {
+        width: 241px;
+    }
     
-    @media (min-width: 376px) {
+    @media (min-width: 992px) {
         & img {
-            width: 241px;
+            width: 607px;
         }
     }
 }
@@ -13,6 +17,21 @@
 
     & h3 {
         margin:0;
+    }
+
+    @media (min-width: 992px) {
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 122px;
+        align-items: center;
+
+        & div {
+            width: 612px;
+        }
+
+        & p {
+            width: 402px;
+        }
     }
 }
 
@@ -40,24 +59,56 @@
         display: block;
         padding: 20px 0 0 0;
     }
+
+    @media (min-width: 992px) {
+        height: 524px;
+
+        & p {
+            width: 306px;
+            margin: 20px auto 0 auto;
+        }
+    }
 }
 
 .das-steckt-drin {
+    text-align: center;
+}
+
+.das-steckt-drin-flex {
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center; 
+    
+    @media (min-width: 992px) {
+        flex-direction: row;
+        justify-content: center; 
+    }
 }
 
 .das-steckt-drin-img {
     width: 214px;
     padding-bottom: 44px;
+
+    @media (min-width: 992px) {
+        width: 402px;
+        height: 521px;
+    }
 }
 
 .das-steckt-drin-icons {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    column-gap: 35px;
+
+    @media (min-width: 992px) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 100px;
+        width: 402px;
+        justify-content: flex-start;
+    }
 }
 
 .das-steckt-drin-icon-einzeln {
@@ -66,11 +117,18 @@
     align-items: center;
     text-align: center;
     width: 70px;
-    column-gap: 35px;
 
     & img {
     width: 45px;
     height: 45px;
+    }
+
+    @media (min-width: 992px) {
+        flex-direction: row;
+        justify-content: center; 
+        align-items: center;
+        text-align: left;
+        column-gap: 33px;
     }
 }
 
@@ -81,14 +139,27 @@
     }
 
     & iframe {
+        width: 100vw;
+        height: 231px;
+        margin: 0;
         pointer-events: none;
+        border: none;
+
+        @media (min-width: 992px) {
+            height: 484px;
+        }
     }
 }
 
 #kaffeepflanze {
     margin-top: 40px;
-
-    @media (min-width: 376px) {
+    & img {
         width: 241px;
+    }
+
+    @media (min-width: 992px) {
+        & img {
+            width: 612px;
+        }
     }
 }

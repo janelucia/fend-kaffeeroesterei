@@ -1,9 +1,26 @@
 .cafe-informationen{
     padding: 60px 24px 40px 24px;
+
+    @media (min-width: 992px) {
+        padding: 124px 101px 131px 104px;
+        display: flex;
+        column-gap: 126px;
+        align-items: flex-start;
+    }
+}
+
+.cafe-informationen-content {
+    @media (min-width: 992px) {
+        width: 507px;
+    }
 }
 
 .cafe-informationen-content h3 {
     margin:0;
+
+    @media (min-width: 992px) {
+        margin-bottom: 35px;
+    }
 }
 
 .cafe-informationen-content-flex {
