@@ -20,10 +20,10 @@
     }
 
     @media (min-width: 992px) {
+        align-items: center;
+        column-gap: 122px;
         display: flex;
         flex-direction: row-reverse;
-        column-gap: 122px;
-        align-items: center;
 
         & div {
             width: 612px;
@@ -43,29 +43,29 @@
     text-align: center;
 
     & h3 {
+        color: white;
         margin: 0;
         padding: 84px 0 0 0;
-        color: white;
     }
 
     & p {
-        margin: 12px 66px 0 68px;
         color: white;
+        margin: 12px 66px 0 68px;
     }
 
     & a {
         color: white;
-        text-decoration: none;
         display: block;
         padding: 20px 0 0 0;
+        text-decoration: none;
     }
 
     @media (min-width: 992px) {
         height: 524px;
 
         & p {
-            width: 306px;
             margin: 20px auto 0 auto;
+            width: 306px;
         }
     }
 }
@@ -75,9 +75,9 @@
 }
 
 .das-steckt-drin-flex {
+    align-items: center; 
     display: flex;
     flex-direction: column;
-    align-items: center; 
     
     @media (min-width: 992px) {
         flex-direction: row;
@@ -86,49 +86,49 @@
 }
 
 .das-steckt-drin-img {
-    width: 214px;
     padding-bottom: 44px;
+    width: 214px;
 
     @media (min-width: 992px) {
-        width: 402px;
         height: 521px;
+        width: 402px;
     }
 }
 
 .das-steckt-drin-icons {
+    column-gap: 35px;
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
     justify-content: space-evenly;
-    column-gap: 35px;
+    width: 100%;
 
     @media (min-width: 992px) {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
         row-gap: 100px;
         width: 402px;
-        justify-content: flex-start;
     }
 }
 
 .das-steckt-drin-icon-einzeln {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     width: 70px;
 
     & img {
-    width: 45px;
-    height: 45px;
+        height: 45px;
+        width: 45px;
     }
 
     @media (min-width: 992px) {
+        align-items: center;
+        column-gap: 33px;
         flex-direction: row;
         justify-content: center; 
-        align-items: center;
         text-align: left;
-        column-gap: 33px;
     }
 }
 
@@ -139,11 +139,11 @@
     }
 
     & iframe {
-        width: 100vw;
+        border: none;
         height: 231px;
         margin: 0;
         pointer-events: none;
-        border: none;
+        width: 100vw;
 
         @media (min-width: 992px) {
             height: 484px;

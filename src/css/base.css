@@ -22,14 +22,14 @@ main {
 }
 
 img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 h1 {
   font-size: 4rem;
-  line-height: 1.17rem;
   font-weight: 900;
+  line-height: 1.17rem;
 
   @media (min-width: 992px) {
     font-size: 6rem;

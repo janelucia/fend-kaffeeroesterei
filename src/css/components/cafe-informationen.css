@@ -1,11 +1,11 @@
-.cafe-informationen{
+.cafe-informationen {
     padding: 60px 24px 40px 24px;
 
     @media (min-width: 992px) {
-        padding: 124px 101px 131px 104px;
-        display: flex;
-        column-gap: 126px;
         align-items: flex-start;
+        column-gap: 126px;
+        display: flex;
+        padding: 124px 101px 131px 104px;
     }
 }
 
@@ -24,7 +24,7 @@
 }
 
 .cafe-informationen-content-flex {
-    display: flex;
     align-items: flex-start;
     column-gap: 37px;
+    display: flex;
 }

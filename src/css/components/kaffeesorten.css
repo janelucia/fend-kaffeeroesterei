@@ -1,9 +1,9 @@
 .kaffeesorten {
     background: #1A1A1A;
     color: #FFFFFF;
-    padding: 60px 24px;
     display: flex;
     flex-direction: column;
+    padding: 60px 24px;
 
     @media (min-width: 992px) {
         padding: 125px 99px 125px 101px;
@@ -14,16 +14,16 @@ div.kaffeesorten h3 {
     margin: 0;
 
     @media (min-width: 992px) {
-        width: 402px;
         height: 119px;
+        width: 402px;
     }
 }
 
-.kaffeesorten-flex{
+.kaffeesorten-flex {
+    column-gap: 16px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    column-gap: 16px;
     margin: 40px 0;
 
     @media (min-width: 992px) {
@@ -39,25 +39,25 @@ div.kaffeesorten h3 {
 }
 
 .kaffeesorten-content-img {
-    width: 155px;
     height: 208px;
+    width: 155px;
 
     @media (min-width: 992px) {
-        width: 299px;
         height: 399px; 
+        width: 299px;
     }
 }
 
-.kaffeesorten-content-name{
+.kaffeesorten-content-name {
     margin: 11px 0 0 0;
 }
 
 .kaffeesorten-content-price {
-    margin: 0;
     color: #737373; 
+    margin: 0;
 }
 
-.kaffeesorten-content-icons{
+.kaffeesorten-content-icons {
     display: flex;
     flex-flow: row wrap;
     

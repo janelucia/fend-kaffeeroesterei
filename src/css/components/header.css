@@ -11,12 +11,20 @@
    & svg path {
       fill: white;
    }
+
+   @media (min-width: 992px) {
+      left: 103px;
+   }
 }
 
 .header-menu {
    position: absolute;
-   top: 21px;
    right: 25.5px;
+   top: 21px;
+
+   @media (min-width: 992px) {
+      display: none;
+   }
 }
 
 .cafe-rustica {
@@ -24,9 +32,41 @@
    object-fit: cover;
 }
 
+.header-links {
+   display: none;
+
+   @media (min-width: 992px) {
+      display: inline;
+      position: absolute;
+      right: 150px;
+      top: 18px;
+
+      & a {
+         color: white;
+         margin-left: 69px;
+      }
+
+      & a:hover {
+         text-decoration: none; 
+      }
+   }
+}
+
+.header-shop-icon {
+   height: 20px;
+   position: absolute;
+   right: 100px;
+   top: 17px;
+   width: 17px;
+
+   & path {
+      color: white;
+   }
+}
+
 #header-cafe {
    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/coffee-shop.jpg);
-   background-size: cover;
    background-position: center;
+   background-size: cover;
    height: 40vh;
 }
