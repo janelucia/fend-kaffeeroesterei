@@ -1,15 +1,15 @@
 .img-seite-rechts {
     text-align: right;
 
-    & img {
+    /* & img {
         width: 241px;
-    }
+    } */
     
-    @media (min-width: 992px) {
+    /* @media (min-width: 992px) {
         & img {
             width: 607px;
         }
-    }
+    } */
 }
 
 .bio-fair {
@@ -39,13 +39,16 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/coffee-bags-2.jpg);
     background-position: center;
     background-size: cover;
-    height: 38.5vh;
+    height: 50vh;
+    min-height: 15%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     & h3 {
         color: white;
         margin: 0;
-        padding: 84px 0 0 0;
     }
 
     & p {
@@ -61,8 +64,6 @@
     }
 
     @media (min-width: 992px) {
-        height: 524px;
-
         & p {
             margin: 20px auto 0 auto;
             width: 306px;
