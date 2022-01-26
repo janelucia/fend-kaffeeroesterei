@@ -15,7 +15,7 @@
     }
 }
 
-.cafe-informationen-content h3 {
+.cafe-informationen-content h2 {
     margin:0;
 
     @media (min-width: 992px) {

@@ -1,5 +1,5 @@
 .header-logo {
-   position: absolute;
+   position: fixed;
    left: 24px;
    top: 10px;
    
@@ -18,7 +18,7 @@
 }
 
 .header-menu {
-   position: absolute;
+   position: fixed;
    right: 25.5px;
    top: 21px;
 
@@ -37,7 +37,7 @@
 
    @media (min-width: 992px) {
       display: inline;
-      position: absolute;
+      position: fixed;
       right: 150px;
       top: 18px;
 
@@ -53,14 +53,19 @@
 }
 
 .header-shop-icon {
-   height: 20px;
-   position: absolute;
-   right: 100px;
-   top: 17px;
-   width: 17px;
+   display: none;
 
-   & path {
-      color: white;
+   @media (min-width: 992px) {
+      display: inline;
+      height: 20px;
+      position: fixed;
+      right: 100px;
+      top: 17px;
+      width: 17px;
+   
+      & path {
+         color: white;
+      }
    }
 }
 

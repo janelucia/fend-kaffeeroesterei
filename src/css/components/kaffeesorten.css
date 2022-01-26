@@ -10,7 +10,7 @@
     }
 }
 
-div.kaffeesorten h3 {
+div.kaffeesorten h2 {
     margin: 0;
 
     @media (min-width: 992px) {
