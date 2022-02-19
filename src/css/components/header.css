@@ -53,19 +53,30 @@
 }
 
 .header-shop-icon {
-   height: 20px;
-   position: absolute;
-   right: 100px;
-   top: 17px;
-   width: 17px;
+   display: none;
 
-   & path {
-      color: white;
+   @media (min-width: 992px) {
+      height: 20px;
+      position: absolute;
+      right: 100px;
+      top: 17px;
+      width: 17px;
+   
+      & path {
+         color: white;
+      }
    }
 }
 
-#header-cafe {
+.header-cafe {
    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/coffee-shop.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 40vh;
+}
+
+.header-origin {
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/header-coffee-beans-hand.jpg);
    background-position: center;
    background-size: cover;
    height: 40vh;

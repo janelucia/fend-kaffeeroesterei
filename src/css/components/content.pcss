@@ -1,165 +1,193 @@
 .img-seite-rechts {
-    text-align: right;
+  text-align: right;
 
+  & img {
+    width: 241px;
+  }
+
+  @media (min-width: 992px) {
     & img {
-        width: 241px;
+      width: 607px;
     }
-    
-    @media (min-width: 992px) {
-        & img {
-            width: 607px;
-        }
-    }
+  }
 }
 
-.bio-fair {
-    margin: 0 24px 63px 24px;
+.information {
+  margin: 0 24px 63px 24px;
 
-    & h3 {
-        margin:0;
-    }
+  & h3 {
+    margin: 0;
+  }
 
-    @media (min-width: 992px) {
-        align-items: center;
-        column-gap: 122px;
-        display: flex;
-        flex-direction: row-reverse;
+  @media (min-width: 992px) {
+    align-items: center;
+    column-gap: 122px;
+    display: flex;
+    flex-direction: row-reverse;
 
-        & div {
-            width: 612px;
-        }
-
-        & p {
-            width: 402px;
-        }
-    }
-}
-
-.herkunft {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/coffee-bags-2.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 38.5vh;
-    text-align: center;
-
-    & h3 {
-        color: white;
-        margin: 0;
-        padding: 84px 0 0 0;
+    & div {
+      width: 612px;
     }
 
     & p {
-        color: white;
-        margin: 12px 66px 0 68px;
+      width: 402px;
     }
+  }
+}
 
-    & a {
-        color: white;
-        display: block;
-        padding: 20px 0 0 0;
-        text-decoration: none;
+.origin {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../images/coffee-bags-2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 38.5vh;
+  text-align: center;
+
+  & h3 {
+    color: white;
+    margin: 0;
+    padding: 84px 0 0 0;
+  }
+
+  & p {
+    color: white;
+    margin: 12px 66px 0 68px;
+  }
+
+  & a {
+    color: white;
+    display: block;
+    padding: 20px 0 0 0;
+    text-decoration: none;
+  }
+
+  @media (min-width: 992px) {
+    height: 524px;
+
+    & p {
+      margin: 20px auto 0 auto;
+      width: 306px;
     }
-
-    @media (min-width: 992px) {
-        height: 524px;
-
-        & p {
-            margin: 20px auto 0 auto;
-            width: 306px;
-        }
-    }
+  }
 }
 
 .das-steckt-drin {
-    text-align: center;
+  text-align: center;
 }
 
 .das-steckt-drin-flex {
-    align-items: center; 
-    display: flex;
-    flex-direction: column;
-    
-    @media (min-width: 992px) {
-        flex-direction: row;
-        justify-content: center; 
-    }
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .das-steckt-drin-img {
-    padding-bottom: 44px;
-    width: 214px;
+  padding-bottom: 44px;
+  width: 214px;
 
-    @media (min-width: 992px) {
-        height: 521px;
-        width: 402px;
-    }
+  @media (min-width: 992px) {
+    height: 521px;
+    width: 402px;
+  }
 }
 
 .das-steckt-drin-icons {
-    column-gap: 35px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 100%;
+  column-gap: 35px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
 
-    @media (min-width: 992px) {
-        align-items: center;
-        flex-direction: column;
-        justify-content: flex-start;
-        row-gap: 100px;
-        width: 402px;
-    }
+  @media (min-width: 992px) {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 100px;
+    width: 402px;
+  }
 }
 
 .das-steckt-drin-icon-einzeln {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 70px;
+
+  & img {
+    height: 45px;
+    width: 45px;
+  }
+
+  @media (min-width: 992px) {
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 70px;
+    column-gap: 33px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+}
 
-    & img {
-        height: 45px;
-        width: 45px;
+.gallery {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: space-between;
+  height: 680px;
+  row-gap: 14px;
+  column-gap: 16px;
+  margin: 24px;
+
+  & img {
+    width: 155px;
+    box-sizing: border-box;
+    object-fit: contain;
+  }
+  
+  @media (min-width: 992) {
+      margin: 100px auto;
+    }
+}
+
+.gallery img:nth-child(2n+1) {
+    order: 1;
     }
 
-    @media (min-width: 992px) {
-        align-items: center;
-        column-gap: 33px;
-        flex-direction: row;
-        justify-content: center; 
-        text-align: left;
-    }
+.gallery img:nth-child(2n+2) {
+    order: 2;
 }
 
 .komm-vorbei {
+  & h3 {
+    margin: 72px 0px 35px 24px;
+  }
 
-    & h3 {
-        margin: 72px 0px 35px 24px;
+  & iframe {
+    border: none;
+    height: 231px;
+    margin: 0;
+    pointer-events: none;
+    width: 100vw;
+
+    @media (min-width: 992px) {
+      height: 484px;
     }
-
-    & iframe {
-        border: none;
-        height: 231px;
-        margin: 0;
-        pointer-events: none;
-        width: 100vw;
-
-        @media (min-width: 992px) {
-            height: 484px;
-        }
-    }
+  }
 }
 
 #kaffeepflanze {
-    margin-top: 40px;
-    & img {
-        width: 241px;
-    }
+  margin-top: 40px;
+  & img {
+    width: 241px;
+  }
 
-    @media (min-width: 992px) {
-        & img {
-            width: 612px;
-        }
+  @media (min-width: 992px) {
+    & img {
+      width: 612px;
     }
+  }
 }
