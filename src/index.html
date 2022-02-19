@@ -7,7 +7,9 @@
   <body>
     <header>
       <div class="hero">
-        {{> head-row }}
+        <nav>
+          {{> head-row }}
+        </nav>
           <div class="hero-title">
             <h1>Rustica</h1>
             <h2>Bio und Fair seit 1991</h2>
@@ -21,7 +23,10 @@
       <div class="cafe-informationen">
         {{> cafe-informationen}}
         <div class="img-seite-rechts">
-          <img id="kaffeeshop-rustica" src="images/coffee-shop.jpg" alt="Kaffeeshop Rustica">
+          <!-- <img id="kaffeeshop-rustica" src="images/coffee-shop.jpg" alt="Kaffeeshop Rustica"> -->
+          <img src="images/coffee-shop.jpg" srcset="images/mobile/coffee-shop-m.jpg 241w, images/desktop/coffee-shop-d.jpg 607w, images/coffee-shop.jpg 2000w" 
+          sizes="(min-width: 2500px) 2000px, (min-width: 700px) 607px, (min-width: 300px) 241px"
+          alt="Kaffeeshop Rustica">
         </div>
       </div>
       <div class="information">
@@ -36,15 +41,15 @@
         </div>
       </div>
       <div class="kaffeesorten">
-        <h3>Entdecke unsere Kaffee Sorten</h3>
+        <h2>Entdecke unsere Kaffee Sorten</h2>
         <div class="kaffeesorten-flex">
           {{> kaffeesorten }}
           {{> kaffeesorten }}
           {{> kaffeesorten }}
           {{> kaffeesorten }}
         </div>
-        <div class="shop-button2">
-          <a href="shop.html">alle Produkte</a>
+        <div class="shop-button2-div">
+          <a class="shop-button2" href="shop.html">alle Produkte</a>
         </div>
       </div>
       <div class="origin">

@@ -1,6 +1,7 @@
 .hero {
   align-items: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/header-coffee.jpg);
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/header-coffee.jpg); */
+  background-image: url(../../images/mobile/header-coffee-m.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,6 +10,10 @@
   height: 75vh;
   justify-content: center;
   row-gap: 150px;
+
+  @media (min-width: 500px) {
+    background-image: url(../../images/desktop/header-coffee-d.jpg);
+  }
 
   @media (min-width: 992px) {
     height: 65vh;  
@@ -28,6 +33,7 @@
   
   & h2 {
     font-weight: 300;
+    font-size: 1.13rem;
     margin: 0;
   }
 }

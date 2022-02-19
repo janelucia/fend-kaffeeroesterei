@@ -18,16 +18,20 @@
 	top:1px;
 }
 
+.shop-button:focus {
+    color: red;
+}
+
 .das-steckt-drin-shop-button {
     margin: 44px 0 0 0;
 }
 
-.shop-button2 {
-    align-self: center;
+.shop-button2-div {
     margin: 0 0 60px 0;
+    align-self: center;
 }
 
-.shop-button2 a {
+.shop-button2 {
     background: #1A1A1A;
     border: 2px solid #FFFFFF;
     border-radius: 5px;
@@ -40,13 +44,17 @@
     width: 182px;
 }
 
-.shop-button2:hover a {
+.shop-button2:hover {
     background-color:#1A1A1A;
     border: 2px solid #1A1A1A;
 }
 
-.shop-button2:active a {
+.shop-button2:active {
     background-color:#D7BE9D;
-    position:relative;
+    position: relative;
     top:1px;
+}
+
+.shop-button2:focus {
+    color: red;
 }
