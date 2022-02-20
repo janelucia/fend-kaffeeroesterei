@@ -11,8 +11,6 @@
 }
 
 div.kaffeesorten h2 {
-    margin: 0;
-
     @media (min-width: 992px) {
         height: 119px;
         width: 402px;
@@ -54,7 +52,6 @@ div.kaffeesorten h2 {
 
 .kaffeesorten-content-price {
     color: #737373; 
-    margin: 0;
 }
 
 .kaffeesorten-content-icons {

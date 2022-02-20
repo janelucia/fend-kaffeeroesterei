@@ -18,15 +18,9 @@ footer {
     }
 
     & h5 {
-        margin: 0;
-
         @media (min-width: 992px) {
             margin: 0 0 14px 0;
         }
-    }
-
-    & h6 {
-        margin: 0;
     }
 
     & p {
@@ -41,18 +35,23 @@ footer {
         color: white;
         text-decoration: none;
     }
+
+    @media (min-width: 992px) {
+        padding: 125px 240px 125px 100px;
+    }
 }
 
+/* TODO footer Abstand zwischen den einzelnen Divs */
 .footer-flex {
     column-gap: 90px;
     display: flex;
     flex-direction: column;
     padding: 15px 0 51px 0;
-
+    
     @media (min-width: 992px) {
-        column-gap: 170px;
+        justify-content: space-between;
         flex-direction: row;
-        padding: 15px 0 51px 0;
+        padding: 15px 0 0 0;
     }
 }
 

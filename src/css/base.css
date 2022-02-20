@@ -2,28 +2,20 @@ body {
   background: #E5E5E5;
   font-family:'Roboto', sans-serif;
   margin: 0;
-
-  /* @media (min-width: 768px) {
-    color: red;
-  } */
 }
 
 main {
   margin: 0;
-  max-width: 1440px;
-
-  /* & div {
-    color: black; */
-
-    /* @media (min-width: 768px) {
-      color: var(--div-color);
-    } */
-  /* } */
 }
 
 img {
   height: auto;
   max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -40,6 +32,9 @@ h1 {
 h2 {
   font-size: var(--h2-font-size-m);
   font-weight: var(--font-weigh-h);
+  @media (min-width: 992px) {
+    font-size: var(--h2-font-size);
+  }
 }
 
 h3 {
@@ -52,7 +47,7 @@ h3 {
 }
 
 h4 {
-  font-size: var(--h3-font-size-m);
+  font-size: var(--h4-font-size);
   font-weight: var(--font-weigh-p);
 }
 

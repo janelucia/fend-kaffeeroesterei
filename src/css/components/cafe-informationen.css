@@ -2,7 +2,7 @@
     padding: 60px 24px 40px 24px;
 
     @media (min-width: 992px) {
-        align-items: flex-start;
+        justify-content: space-between;
         column-gap: 126px;
         display: flex;
         padding: 124px 101px 131px 104px;
