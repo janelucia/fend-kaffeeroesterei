@@ -10,7 +10,7 @@ function createProductElements() {
 
     const productImage = document.createElement("img");
     productImage.classList.add("product-img");
-    productImage.setAttribute("scr", product.productImage);
+    productImage.setAttribute("src", product.productImage);
     productImage.setAttribute( "alt", product.altText);
 
     const productInfo = document.createElement('div');
