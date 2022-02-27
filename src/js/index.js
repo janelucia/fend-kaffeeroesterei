@@ -1,7 +1,9 @@
-import myFunction, { multiply } from "./myModule";
+import shop from "./shop";
 
-myFunction();
+document.addEventListener('DOMContentLoaded', () => {
+    const currentPath = window.location.pathname;
 
-const result = multiply(2, 5);
-
-console.log(result);
+    if (currentPath === '/shop.html') {
+        shop();
+    };    
+});

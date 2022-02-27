@@ -1,4 +1,14 @@
 /* TODO - alle Bilder mit srcset einbauen! */
+.video-wrapper {
+  margin: 0 24px;
+  @media (min-width: 992px){
+    margin: 0 100px;
+  }
+  
+  & video {
+    width: 100%;
+  }
+}
 
 .img-seite-rechts {
   text-align: right;
@@ -20,7 +30,7 @@
 }
 
 .information {
-  padding: 0 24px 63px 24px;
+  padding: 0 24px;
 
   & a {
     text-decoration: none;
@@ -67,6 +77,22 @@
   }
 }
 
+.information-last {
+  margin-bottom: 60px;
+
+  & img {
+    margin-top: 60px;
+  }
+
+  @media (min-width: 992px) {
+    margin-bottom: 125px;
+
+  & img {
+    margin-top: 100px;
+  }
+  }
+}
+
 /* TODO align h to p */
 .information-middle {
   padding: 0 24px 48px;
@@ -89,7 +115,10 @@
 }
 
 .information-middle-origin {
-  padding-top: 126px;
+  padding-top: 60px;
+  @media (min-width: 992px) {
+    padding-top: 126px;
+  }
 }
 
 .origin {
@@ -231,9 +260,6 @@
 
 .gallery img:nth-child(2n+1) {
   order: 1;
-  @media (min-width: 992px) {
-
-  } 
 }
 
 .gallery img:nth-child(2n+2) {
@@ -258,6 +284,18 @@
   }
 }
 
+.shop-kaffeesorten {
+  margin: 102px 24px 0;
+
+  @media (min-width: 992px) {
+    margin: 272px 0 0 101px;
+
+    & h2 {
+      margin-right: 959px;
+    }
+  }
+}
+
 #kaffeepflanze {
   margin-top: 40px;
   & img {
@@ -269,4 +307,31 @@
       width: 612px;
     }
   }
+}
+
+#privacy {
+  margin: 113px 24px 38px;
+
+  & h2 {
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+
+  & h3 {
+    padding-top: 20px;
+  }
+
+  & ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  @media (min-width: 992px) {
+    margin: 219px 309px 122px;
+  }
+}
+
+/* TODO: another solution for whitespace between list item and dash */
+#privacy li::before {
+  content: '-          ';
 }
