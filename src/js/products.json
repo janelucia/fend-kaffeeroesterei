@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "productImage": "../images/costa-rica-package.jpg",
+    "productImage": "../images/coffee-costa-rica-transparent.png",
     "altText": "Äthiopien coffee package",
     "productName": "Äthiopien",
     "price": 690,
@@ -9,7 +9,7 @@
   },
   {
     "id": 1,
-    "productImage": "../images/costa-rica-package.jpg",
+    "productImage": "../images/coffee-costa-rica-transparent.png",
     "altText": "Brasilien coffee package",
     "productName": "Brasilien",
     "price": 880,
@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "productImage": "../images/costa-rica-package.jpg",
+    "productImage": "../images/coffee-costa-rica-transparent.png",
     "altText": "Nicaragua coffee package",
     "productName": "Nicaragua",
     "price": 440,
@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "productImage": "../images/costa-rica-package.jpg",
+    "productImage": "../images/coffee-costa-rica-transparent.png",
     "altText": "Peru coffee package",
     "productName": "Peru",
     "price": 678,
@@ -33,7 +33,7 @@
   },
   {
     "id": 4,
-    "productImage": "../images/costa-rica-package.jpg",
+    "productImage": "../images/coffee-costa-rica-transparent.png",
     "altText": "Kolumbien coffee package",
     "productName": "Kolumbien",
     "price": 345,
@@ -41,7 +41,7 @@
   },
   {
     "id": 5,
-    "productImage": "../images/costa-rica-package.jpg",
+    "productImage": "../images/coffee-costa-rica-transparent.png",
     "altText": "Venezuela coffee package",
     "productName": "Venezuela",
     "price": 134,
@@ -49,7 +49,7 @@
   },
   {
     "id": 6,
-    "productImage": "../images/costa-rica-package.jpg",
+    "productImage": "../images/coffee-costa-rica-transparent.png",
     "altText": "Ecuador coffee package",
     "productName": "Ecuador",
     "price": 456,
@@ -57,7 +57,7 @@
   },
   {
     "id": 7,
-    "productImage": "../images/costa-rica-package.jpg",
+    "productImage": "../images/coffee-costa-rica-transparent.png",
     "altText": "Haiti coffee package",
     "productName": "Haiti",
     "price": 789,

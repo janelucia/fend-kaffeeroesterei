@@ -245,8 +245,17 @@
     /* box-sizing: border-box;
     object-fit: contain;
     align-items: stretch; */
-  }
+
+    &:nth-child(2n+1) {
+      order: 1;
+    }
   
+    &:nth-child(2n+2) {
+      order: 2;
+    }
+    
+  }
+
   @media (min-width: 992px) {
     margin: 0 100px;
     /* max-width: 100vw; */
@@ -258,13 +267,13 @@
   }
 }
 
-.gallery img:nth-child(2n+1) {
+/* .gallery img:nth-child(2n+1) {
   order: 1;
 }
 
 .gallery img:nth-child(2n+2) {
   order: 2;
-}
+} */
 
 .komm-vorbei {
   & h3 {

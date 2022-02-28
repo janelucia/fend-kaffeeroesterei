@@ -2,11 +2,13 @@ import products from "./products.json";
 
 function createProductElements() {
   const productSection = document.querySelector(".shop-products-section");
-  const productContainer = document.createElement("div");
 
   products.forEach((product) => {
     const productElement = document.createElement("div");
     productElement.classList.add("product");
+
+    const productImageWrapper = document.createElement("div");
+    productImageWrapper.classList.add('product-img-wrapper');
 
     const productImage = document.createElement("img");
     productImage.classList.add("product-img");
@@ -17,7 +19,7 @@ function createProductElements() {
     productInfo.classList.add('product-info');
 
     const productName = document.createElement("h4");
-    productName.classList.add("product-title");
+    productName.classList.add("product-name");
     const productNameText = document.createTextNode(product.productName);
     productName.appendChild(productNameText);
 
@@ -26,16 +28,18 @@ function createProductElements() {
     const productPriceText = document.createTextNode(product.price);
     productPrice.appendChild(productPriceText);
 
+    productImageWrapper.appendChild(productImage);
+
     productInfo.appendChild(productName);
     productInfo.appendChild(productPrice);
 
-    productElement.appendChild(productImage);
+    productElement.appendChild(productImageWrapper);
     productElement.appendChild(productInfo);
 
-    productContainer.appendChild(productElement);
+    productSection.appendChild(productElement);
   });
 
-  productSection.appendChild(productContainer);
+  // productSection.appendChild(productContainer);
 }
 
 const shop = () => {
