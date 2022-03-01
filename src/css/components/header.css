@@ -62,6 +62,14 @@
    }
 }
 
+.header-link:active {
+   color: black;
+}
+
+.active {
+   text-decoration: none;
+}
+
 .header-shop-icon {
    display: none;
 

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    {{> html-head }}
-    <title>Rustica</title>
+    {{> html-head origin="true"}}
   </head>
   <body>
     <header class="header-origin">
       <nav>
-        {{> head-row }}
+        {{> head-row active_origin=true }}
       </nav>
     </header>
     <main>
@@ -45,8 +44,7 @@
       </div>
     </main>
     <footer>
-      {{> footer }}
-      <a href="/">Home Link</a>
+      {{> footer origin=true}}
     </footer>
     <script src="/js/index.js" type="module"></script>
   </body>
