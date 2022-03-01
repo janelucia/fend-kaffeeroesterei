@@ -70,7 +70,7 @@
    text-decoration: none;
 }
 
-.header-shop-icon {
+.mobile-navi .header-shop-icon {
    display: none;
 
    @media (min-width: 992px) {
@@ -80,18 +80,11 @@
       right: 100px;
       top: 17px;
       width: 17px;
-   
-      & path {
-         color: white;
+
+      & svg path {
+         fill: transparent;
       }
    }
-}
-
-.header-cafe {
-   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/coffee-shop.jpg);
-   background-position: center;
-   background-size: cover;
-   height: 40vh;
 }
 
 .header-black {
@@ -103,6 +96,14 @@
    & a {
       color: black;
    }
+}
+
+
+.header-cafe {
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/coffee-shop.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 40vh;
 }
 
 .header-origin {

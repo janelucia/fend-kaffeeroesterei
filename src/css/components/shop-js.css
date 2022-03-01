@@ -40,19 +40,11 @@
     color: #737373;
 }
 
-/* .kaffeesorten-content-icons {
+.product-icon-wrapper {
     display: flex;
     flex-flow: row wrap;
-    
-    & svg path {
-        fill: #1A1A1A;
-    }
-}
+} 
 
-.icon-coffee-beans svg {
-    margin-right: 9px;
+.product-icon {
+    width: 10%;
 }
-
-.icon-french-press svg {
-    margin-right: 9px;
-} */
