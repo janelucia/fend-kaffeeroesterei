@@ -21,6 +21,7 @@
 
 .header-menu {
    position: fixed;
+   width: 32px;
    right: 25.5px;
    top: 21px;
 
@@ -83,13 +84,19 @@
 
       & svg path {
          fill: transparent;
+         stroke: white;
       }
+   }
+}
+
+.header-black .header-shop-icon {
+   & svg path {
+      stroke: black;
    }
 }
 
 .header-black {
    & svg path {
-      color: black;
       fill: black;
    }
 

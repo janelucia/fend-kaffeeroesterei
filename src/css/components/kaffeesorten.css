@@ -20,14 +20,22 @@ div.kaffeesorten h2 {
 }
 
 .kaffeesorten-flex {
-    column-gap: 16px;
+    column-gap: 2%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin: 40px 0;
 
+    &>div {
+        width: 49%;
+    }
+
     @media (min-width: 992px) {
-        column-gap: 5px;
+        column-gap: 1.3333%;
+        
+        &>div {
+            width: 24%;
+        }
     }
 }
 
@@ -36,16 +44,6 @@ div.kaffeesorten h2 {
     display: flex;
     flex-flow: column nowrap;
     margin-bottom: 40px;
-}
-
-.kaffeesorten-content-img {
-    height: 208px;
-    width: 155px;
-
-    @media (min-width: 992px) {
-        height: 399px; 
-        width: 299px;
-    }
 }
 
 .kaffeesorten-content-name {
@@ -60,15 +58,11 @@ div.kaffeesorten h2 {
     display: flex;
     flex-flow: row wrap;
     
+    & div {
+        width: 10%;
+    }
+    
     & svg path {
         fill: #1A1A1A;
     }
-}
-
-.icon-coffee-beans svg {
-    margin-right: 9px;
-}
-
-.icon-french-press svg {
-    margin-right: 9px;
 }
