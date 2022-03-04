@@ -41,7 +41,6 @@ footer {
     }
 }
 
-/* TODO footer Abstand zwischen den einzelnen Divs */
 .footer-flex {
     column-gap: 90px;
     display: flex;
@@ -67,10 +66,12 @@ footer {
     column-gap: 97px;
     display: flex;
     flex-direction: row;
+    margin-top: 34px;
 
     @media (min-width: 992px) {
         column-gap: 157px;
         flex-direction: row-reverse;
+        margin-top: 0;
     }
 }
 
