@@ -7,6 +7,9 @@ function createProductElements() {
     const productElement = document.createElement("div");
     productElement.classList.add("product");
 
+    const productLink = document.createElement("a");
+    productLink.setAttribute("href", `shop/product.html?id=${product.id}`);
+
     const productImageWrapper = document.createElement("div");
     productImageWrapper.classList.add("product-img-wrapper");
 
@@ -37,21 +40,23 @@ function createProductElements() {
       icon.setAttribute("src", iconPath);
       productIconWrapper.appendChild(icon);
     };
-
-    productImageWrapper.appendChild(productImage);
-
+    
     if (product.icons) {
       product.icons.forEach((iconName) => {
         icon(products.commons.iconPaths[iconName]);
       })
-    } 
+    }
+
+    productImageWrapper.appendChild(productImage);
 
     productInfo.appendChild(productName);
     productInfo.appendChild(productPrice);
     productInfo.appendChild(productIconWrapper);
 
-    productElement.appendChild(productImageWrapper);
-    productElement.appendChild(productInfo);
+    productLink.appendChild(productImageWrapper);
+    productLink.appendChild(productInfo);
+
+    productElement.appendChild(productLink);
 
     productSection.appendChild(productElement);
   });

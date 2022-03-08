@@ -32,6 +32,12 @@
    }
 }
 
+.header-black .header-menu {
+   & svg path {
+      stroke: black;
+   }
+}
+
 .cafe-rustica {
    position: relative;
    object-fit: cover;

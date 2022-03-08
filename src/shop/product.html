@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    {{> html-head shop="true"}}
+  </head>
+  <body>
+    <header class="header-black">
+      <nav>{{> head-row active_shop=true }}</nav>
+    </header>
+    <main>
+      <section class="product-detail-section">
+      </section>
+      <div class="kaffeesorten">
+        <h2>Entdecke unsere Kaffee Sorten</h2>
+        <div class="kaffeesorten-flex">
+          {{> kaffeesorten }}
+          {{> kaffeesorten }}
+          {{> kaffeesorten }}
+          {{> kaffeesorten }}
+        </div>
+        <div class="shop-button2-div">
+          <a class="shop-button2" href="shop.html">alle Produkte</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      {{> footer shop="true"}}
+    </footer>
+  </body>
+</html>
