@@ -3,7 +3,7 @@ import products from "./products.json";
 function createProductElements() {
   const productSection = document.querySelector(".shop-products-section");
 
-  products.products.forEach((product) => {
+  const productElements = products.products.map((product) => {
     const productElement = document.createElement("div");
     productElement.classList.add("product");
 
@@ -58,6 +58,10 @@ function createProductElements() {
 
     productElement.appendChild(productLink);
 
+    return productElement;
+  });
+
+  productElements.forEach((productElement) => {
     productSection.appendChild(productElement);
   });
 }
