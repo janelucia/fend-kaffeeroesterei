@@ -3,8 +3,8 @@ import products from "./products.json";
 const queryString = window.location.search;
 console.log(queryString);
 
-let params = new URL(document.location).searchParams;
-let paramId = params.get("id");
+const params = new URL(document.location).searchParams;
+const paramId = params.get("id");
 console.log(paramId);
 
 function createProductDetails() {
@@ -55,34 +55,33 @@ function createProductDetails() {
 
   const dropdownButton = document.createElement("btn");
   dropdownButton.classList.add("dropbtn");
-  const dropdownButtonText = document.createTextNode("Wie viel Kaffee brauchst du?");
-  const dropdownButtonArrow = document.createElement("i");
+  const dropdownButtonText = document.createTextNode(
+    "Wie viel Kaffee brauchst du?"
+  );
+  const dropdownButtonArrow = document.createElement("strong");
   dropdownButtonArrow.classList.add("btn-arrow");
+  const dropdownButtonArrowText = document.createTextNode("›");
+  dropdownButtonArrow.appendChild(dropdownButtonArrowText);
   dropdownButton.appendChild(dropdownButtonText);
   dropdownButton.appendChild(dropdownButtonArrow);
 
-  const dropdownContentWrapper = document.createElement("select");
+  const dropdownContentWrapper = document.createElement("div");
   dropdownContentWrapper.classList.add("dropdown-content-wrapper");
 
   const dropdownListItems = productArray[0].variants.map((variant) => {
-    const dropdownListItemElement = document.createElement("option");
+    const dropdownListItemElement = document.createElement("a");
+    const dropdownListItemBreak1 = document.createElement("br");
     const dropdownListItemName = document.createTextNode(variant.name);
-    const dropdownListItemPrice = document.createTextNode(variant.price);
-    const dropdownListItemWeight = document.createTextNode(variant.weight);
+    const dropdownListItemPrice = document.createTextNode(
+      `${variant.price} + €`
+    );
 
     dropdownListItemElement.appendChild(dropdownListItemName);
+    dropdownListItemElement.appendChild(dropdownListItemBreak1);
     dropdownListItemElement.appendChild(dropdownListItemPrice);
-    dropdownListItemElement.appendChild(dropdownListItemWeight);
 
     return dropdownListItemElement;
   });
-  // const dropdownListItem = document.createElement("a");
-  // const dropdownListItemText = document.createTextNode(productArray[0].variants.join(""));
-  // const dropdownListItemText = document.createTextNode();
-  //   dropdownListItemText.forEach((variant) => {
-  //     productArray[0].variants
-  // }));
-  // dropdownListItem.appendChild(dropdownListItemText);
 
   dropdownListItems.forEach((dropdownListItem) => {
     dropdownContentWrapper.appendChild(dropdownListItem);
@@ -95,7 +94,7 @@ function createProductDetails() {
   const productIconWrapper = document.createElement("div");
   productIconWrapper.classList.add("product-icon-wrapper-detail");
 
-  const icon = (iconPath) => {
+  const icons = (iconPath) => {
     const icon = document.createElement("img");
     icon.classList.add("product-icon-detail");
     icon.setAttribute("src", iconPath);
@@ -104,7 +103,7 @@ function createProductDetails() {
 
   if (productArray[0].icons) {
     productArray[0].icons.forEach((iconName) => {
-      icon(products.commons.iconPaths[iconName]);
+      icons(products.commons.iconPaths[iconName]);
     });
   }
 
@@ -133,6 +132,15 @@ function createProductDetails() {
   productDetailSection.appendChild(productImageWrapper);
   productDetailSection.appendChild(productInfo);
   productDetailSection.appendChild(productDescriptionWrapper);
+
+  dropdownButton.addEventListener("click", () => {
+    document
+      .querySelector(".dropdown-content-wrapper")
+      .classList.toggle("show");
+  });
+  // dropdownContentWrapper.addEventListener("click", () => {
+  //   document.getElementsByTagName("a").classList.toggle(":active");
+  // });
 }
 
 const product = () => {
