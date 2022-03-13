@@ -8,24 +8,19 @@
       <nav>{{> head-row active_shop=true }}</nav>
     </header>
     <main>
-      <section class="product-detail-section">
-      </section>
+      <section class="product-detail-section"></section>
       <div class="kaffeesorten">
         <h2>Entdecke unsere Kaffee Sorten</h2>
         <div class="kaffeesorten-flex">
           <!-- TODO build kaffeesorten with js -->
-          {{> kaffeesorten shop="true"}}
-          {{> kaffeesorten shop="true"}}
-          {{> kaffeesorten shop="true"}}
-          {{> kaffeesorten shop="true"}}
+          {{> kaffeesorten shop="true"}} {{> kaffeesorten shop="true"}} {{>
+          kaffeesorten shop="true"}} {{> kaffeesorten shop="true"}}
         </div>
         <div class="shop-button2-div">
           <a class="shop-button2" href="shop.html">alle Produkte</a>
         </div>
       </div>
     </main>
-    <footer>
-      {{> footer shop="true"}}
-    </footer>
+    <footer>{{> footer shop="true"}}</footer>
   </body>
 </html>

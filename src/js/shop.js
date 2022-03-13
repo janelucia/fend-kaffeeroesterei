@@ -40,11 +40,11 @@ function createProductElements() {
       icon.setAttribute("src", iconPath);
       productIconWrapper.appendChild(icon);
     };
-    
+
     if (product.icons) {
       product.icons.forEach((iconName) => {
         icon(products.commons.iconPaths[iconName]);
-      })
+      });
     }
 
     productImageWrapper.appendChild(productImage);

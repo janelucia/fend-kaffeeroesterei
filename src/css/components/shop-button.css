@@ -1,125 +1,139 @@
 .shop-button {
-  background: #1A1A1A;
-  border: 2px solid #1A1A1A;
+  background: #1a1a1a;
+  border: 2px solid #1a1a1a;
   border-radius: 5px;
   color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.88rem;
   padding: 14px 48px;
   text-decoration: none;
 }
 .shop-button:hover {
-	background-color:#3A3734;
-    border: 2px solid #3A3734;
+  background-color: #3a3734;
+  border: 2px solid #3a3734;
 }
 .shop-button:active {
-	background-color:#D7BE9D;
-    position:relative;
-	top:1px;
+  background-color: #d7be9d;
+  position: relative;
+  top: 1px;
 }
 
 .shop-button:focus {
-    color: red;
+  color: red;
 }
 
 .das-steckt-drin-shop-button {
-    margin: 44px 0 0 0;
+  margin: 44px 0 0 0;
 }
 
 .shop-button2-div {
-    margin: 0 0 60px 0;
-    align-self: center;
+  margin: 0 0 60px 0;
+  align-self: center;
 }
 
 .shop-button2 {
-    background: #1A1A1A;
-    border: 2px solid #FFFFFF;
-    border-radius: 5px;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.88rem;
-    height: 48px;
-    padding: 15px 50px;
-    text-decoration: none;
-    width: 182px;
+  background: #1a1a1a;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.88rem;
+  height: 48px;
+  padding: 15px 50px;
+  text-decoration: none;
+  width: 182px;
 }
 
 .shop-button2:hover {
-    background-color:#1A1A1A;
-    border: 2px solid #1A1A1A;
+  background-color: #1a1a1a;
+  border: 2px solid #1a1a1a;
 }
 
 .shop-button2:active {
-    background-color:#D7BE9D;
-    position: relative;
-    top:1px;
+  background-color: #d7be9d;
+  position: relative;
+  top: 1px;
 }
 
 .shop-button2:focus {
-    color: red;
+  color: red;
 }
 
 .dropdown-wrapper {
-    position: relative;
-    /* display: inline-block; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  /* display: inline-block; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dropbtn {
-    background-color: #E5E5E5;
-    border: solid black;
-    border-radius: 5%;
-    cursor: pointer;
-    width: 270px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    /* display: inline-block; */
-    text-align: center;
-    z-index: 1;
+  background-color: #e5e5e5;
+  border: solid black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 270px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* display: inline-block; */
+  text-align: center;
+  z-index: 1;
 }
 
 .btn-arrow {
-    width: 47px;
-    transform: rotate(0.25turn);
-    font-size: var(--h2-font-size);
-    font-weight: var(--font-weigh-p);
-    background-color: black;
-    color: white;
-    /* display: inline-block;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  width: 47px;
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-weigh-p);
+  background-color: black;
+  color: white;
+  /* display: inline-block;
     position: relative; */
-    text-align: center;
-    z-index: 0;
+  text-align: center;
+  z-index: 0;
+  transform: rotate(0.25turn) translate(0, -3px);
+
+  &::after {
+    content: "›";
+  }
+}
+
+.btn-up {
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  transform: rotate(0.75turn) translate(0, 3px);
 }
 
 .dropdown-content-wrapper {
-    display: none;
-    position: absolute;
-    top: 100%;
-    border: solid black;
-    border-radius: 5%;
-    width: inherit;
-    background-color: #D7BE9D;
-    z-index: 1;
+  display: none;
+  position: absolute;
+  top: calc(100% + 3px);
+  border: solid black;
+  border-radius: 5px;
+  width: inherit;
+  background-color: #d7be9d;
+  z-index: 1;
 
-    & a {
-        display: block;
-        padding: 12px 16px;
+  & a {
+    display: block;
+    padding: 12px 16px;
 
-        &:hover {
-            background-color: #dfcbb0;
-        }
-
-        &:active {
-            background-color: #3A3734;
-            color: white;
-        }
+    &:hover {
+      background-color: #dfcbb0;
     }
+
+    &:active {
+      background-color: #3a3734;
+      color: white;
+    }
+  }
 }
 
 .show {
-    display: inline-block;
+  display: inline-block;
 }
