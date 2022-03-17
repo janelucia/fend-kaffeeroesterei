@@ -9,6 +9,7 @@
   text-decoration: none;
 }
 .shop-button:hover {
+  cursor: pointer;
   background-color: #3a3734;
   border: 2px solid #3a3734;
 }
@@ -59,9 +60,14 @@
   color: red;
 }
 
+.shop-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 .dropdown-wrapper {
   position: relative;
-  /* display: inline-block; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,9 +83,9 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* display: inline-block; */
   text-align: center;
   z-index: 1;
+  margin-top: 30px;
 }
 
 .btn-arrow {
@@ -90,8 +96,6 @@
   font-weight: var(--font-weigh-p);
   background-color: black;
   color: white;
-  /* display: inline-block;
-    position: relative; */
   text-align: center;
   z-index: 0;
   transform: rotate(0.25turn) translate(0, -3px);

@@ -8,6 +8,32 @@
       <nav>{{> head-row active_shop=true }}</nav>
     </header>
     <main>
+      <div class="shopping-cart-modal">
+        <section class="shopping-cart-section">
+          <div class="burger-menu-close">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.07129 1.36377L7.49986 7.50013M13.9284 13.6365L7.49986 7.50013M7.49986 7.50013L1.07129 13.6365M7.49986 7.50013L13.9284 1.36377"
+                stroke="currentColor"
+                stroke-width="3"
+              />
+            </svg>
+          </div>
+          <h2>Warenkorb</h2>
+          <section class="shopping-cart-product-section"></section>
+        </section>
+        <section>
+          <h2>Bestellübersicht</h2>
+          <section class="order-overview-section"></section>
+          <button>bezahlen</button>
+        </section>
+      </div>
       <section class="product-detail-section"></section>
       <div class="kaffeesorten">
         <h2>Entdecke unsere Kaffee Sorten</h2>

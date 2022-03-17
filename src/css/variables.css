@@ -2,38 +2,40 @@
   /* Colors */
   /* --div-color: red; */
 
-  /* Text Styles */
-  /* h1: 96px; mobile: 64px */
-    --h1-font-size: 6rem;
-    --h1-font-size-m: 4rem;
+  /* Text Styles (lh = lineheight)*/
+  /* h1: 96px, lh: 110px; mobile: 64px, lh: 75px */
+  --h1-font-size: 6rem;
+  --h1-line-height: 1.955rem;
+  --h1-font-size-m: 4rem;
+  --h1-line-height-m: 0.781rem;
 
-  /* h2: 48px; mobile: 36px */
-    --h2-font-size: 3rem;
-    --h2-font-size-m: 2.88rem;
+  /* h2: 48px, lh: 56.25px; mobile: 36px, lh: 34px */
+  --h2-font-size: 3rem;
+  --h2-line-height: 1.172em;
+  --h2-font-size-m: 2.88rem;
+  --h2-line-height-m: 0.708em;
 
-  /* h3: 42px; mobile: 32px */
-    --h3-font-size: 2.6rem;
-    --h3-font-size-m: 2rem;
+  /* h3: 42px, lh: 49px; mobile: 32px, lh: 37.5px */
+  --h3-font-size: 2.6rem;
+  --h3-line-height: 1.021em;
+  --h3-font-size-m: 2rem;
+  --h3-line-height-m: 0.781em;
 
-  /* h4: 18px; mobile: 18px */
-    --h4-font-size: 1.13rem;
+  /* h4: 18px; mobile: 18px - both lh: 21.09px */
+  --h4-font-size: 1.13rem;
+  --h4-line-height: 1.166em;
 
-  /* h5: 42px; mobile: 24px */
-    --h5-font-size: 2.6rem;
-    --h5-font-size-m: 1.5rem;
+  /* p: 18px, lh: 24px; mobile: 14px, lh: 18px */
+  --p-font-size: 1.13rem;
+  --p-line-height: 0.5em;
+  --p-font-size-m: 0.88rem;
+  --p-line-height-m: 1.125rem;
 
-  /* h6: 18px; mobile: 18px */
-    --h6-font-size: 1.13rem;
-
-  /* p: 18px; mobile: 14px */
-    --p-font-size: 1.13rem;
-    --p-font-size-m: 0.88rem;
-
-  /* a: 14px; mobile: 14px */
-    --a-font-size: 0.88rem;
+  /* a: 14px; mobile: 14px - both lh: 18px*/
+  --a-font-size: 0.88rem;
+  --a-line-height: 1.125rem;
 
   /* font-weigh */
-    --font-weigh-h: 900;
-    --font-weigh-p: 400;
+  --font-weigh-h: 900;
+  --font-weigh-p: 400;
 }
-

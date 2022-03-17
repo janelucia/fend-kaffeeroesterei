@@ -1,9 +1,18 @@
 {
   "commons": {
-    "iconPaths": {
-      "coffeeBeans": "../images/icons/icon-coffee-beans.svg",
-      "frenchPress": "../images/icons/icon-french-press.svg",
-      "coffeeShovel": "../images/icons/icon-coffee-shovel.svg"
+    "icons": {
+      "coffeeBeans": {
+        "path": "../images/icons/icon-coffee-beans.svg",
+        "description": "Mild geröstet"
+      },
+      "frenchPress": {
+        "path": "../images/icons/icon-french-press.svg",
+        "description": "Für French Press"
+      },
+      "coffeeShovel": {
+        "path": "../images/icons/icon-coffee-shovel.svg",
+        "description": "gemahlen oder als Bohne"
+      }
     }
   },
   "products": [
