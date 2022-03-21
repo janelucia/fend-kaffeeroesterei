@@ -21,23 +21,29 @@
       "productImage": "../images/coffee-costa-rica-transparent.png",
       "altText": "Äthiopien coffee package",
       "productName": "Äthiopien",
-      "price": 690,
+      "price": "6.99€ - 46.99€",
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
           "name": "500g",
           "weight": 500,
-          "price": 690
+          "price": 6.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "1kg",
           "weight": 1000,
-          "price": 1000
+          "price": 9.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "5kg",
           "weight": 5000,
-          "price": 5000
+          "price": 46.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         }
       ],
       "summary": "Costa Rica Filterkaffee ist äußerst ergiebig und hat praktisch keine Säure. Den Gaumen umschmeichelt ein vollmundiges Haselnussaroma. Gleich probieren!",
@@ -48,23 +54,29 @@
       "productImage": "../images/coffee-costa-rica-transparent.png",
       "altText": "Brasilien coffee package",
       "productName": "Brasilien",
-      "price": 880,
+      "price": "5.99€ - 42.99€",
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
           "name": "500g",
           "weight": 500,
-          "price": 690
+          "price": 5.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "1kg",
           "weight": 1000,
-          "price": 1000
+          "price": 8.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "5kg",
           "weight": 5000,
-          "price": 5000
+          "price": 42.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         }
       ],
       "summary": "Costa Rica Filterkaffee ist äußerst ergiebig und hat praktisch keine Säure. Den Gaumen umschmeichelt ein vollmundiges Haselnussaroma. Gleich probieren!",
@@ -75,23 +87,29 @@
       "productImage": "../images/coffee-costa-rica-transparent.png",
       "altText": "Nicaragua coffee package",
       "productName": "Nicaragua",
-      "price": 440,
+      "price": "4.99€ - 39.99€",
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
           "name": "500g",
           "weight": 500,
-          "price": 690
+          "price": 4.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "1kg",
           "weight": 1000,
-          "price": 1000
+          "price": 7.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "5kg",
           "weight": 5000,
-          "price": 5000
+          "price": 39.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         }
       ],
       "summary": "Costa Rica Filterkaffee ist äußerst ergiebig und hat praktisch keine Säure. Den Gaumen umschmeichelt ein vollmundiges Haselnussaroma. Gleich probieren!",
@@ -102,23 +120,29 @@
       "productImage": "../images/coffee-costa-rica-transparent.png",
       "altText": "Peru coffee package",
       "productName": "Peru",
-      "price": 678,
+      "price": "6.99€ - 46.99€",
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
           "name": "500g",
           "weight": 500,
-          "price": 690
+          "price": 6.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "1kg",
           "weight": 1000,
-          "price": 1000
+          "price": 9.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "5kg",
           "weight": 5000,
-          "price": 5000
+          "price": 46.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         }
       ],
       "summary": "Costa Rica Filterkaffee ist äußerst ergiebig und hat praktisch keine Säure. Den Gaumen umschmeichelt ein vollmundiges Haselnussaroma. Gleich probieren!",
@@ -129,23 +153,29 @@
       "productImage": "../images/coffee-costa-rica-transparent.png",
       "altText": "Kolumbien coffee package",
       "productName": "Kolumbien",
-      "price": 345,
+      "price": "5.99€ - 42.99€",
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
           "name": "500g",
           "weight": 500,
-          "price": 690
+          "price": 5.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "1kg",
           "weight": 1000,
-          "price": 1000
+          "price": 8.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "5kg",
           "weight": 5000,
-          "price": 5000
+          "price": 42.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         }
       ],
       "summary": "Costa Rica Filterkaffee ist äußerst ergiebig und hat praktisch keine Säure. Den Gaumen umschmeichelt ein vollmundiges Haselnussaroma. Gleich probieren!",
@@ -156,23 +186,29 @@
       "productImage": "../images/coffee-costa-rica-transparent.png",
       "altText": "Venezuela coffee package",
       "productName": "Venezuela",
-      "price": 134,
+      "price": "4.99€ - 39.99€",
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
           "name": "500g",
           "weight": 500,
-          "price": 690
+          "price": 4.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "1kg",
           "weight": 1000,
-          "price": 1000
+          "price": 7.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "5kg",
           "weight": 5000,
-          "price": 5000
+          "price": 39.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         }
       ],
       "summary": "Costa Rica Filterkaffee ist äußerst ergiebig und hat praktisch keine Säure. Den Gaumen umschmeichelt ein vollmundiges Haselnussaroma. Gleich probieren!",
@@ -183,23 +219,29 @@
       "productImage": "../images/coffee-costa-rica-transparent.png",
       "altText": "Ecuador coffee package",
       "productName": "Ecuador",
-      "price": 456,
+      "price": "6.99€ - 46.99€",
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
           "name": "500g",
           "weight": 500,
-          "price": 690
+          "price": 6.9,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "1kg",
           "weight": 1000,
-          "price": 1000
+          "price": 9.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "5kg",
           "weight": 5000,
-          "price": 5000
+          "price": 46.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         }
       ],
       "summary": "Costa Rica Filterkaffee ist äußerst ergiebig und hat praktisch keine Säure. Den Gaumen umschmeichelt ein vollmundiges Haselnussaroma. Gleich probieren!",
@@ -210,23 +252,29 @@
       "productImage": "../images/coffee-costa-rica-transparent.png",
       "altText": "Haiti coffee package",
       "productName": "Haiti",
-      "price": 789,
+      "price": "5.99€ - 42.99€",
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
           "name": "500g",
           "weight": 500,
-          "price": 690
+          "price": 5.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "1kg",
           "weight": 1000,
-          "price": 1000
+          "price": 8.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         },
         {
           "name": "5kg",
           "weight": 5000,
-          "price": 5000
+          "price": 42.99,
+          "status": "sofort versandbereit",
+          "condition": "gemahlen"
         }
       ],
       "summary": "Costa Rica Filterkaffee ist äußerst ergiebig und hat praktisch keine Säure. Den Gaumen umschmeichelt ein vollmundiges Haselnussaroma. Gleich probieren!",

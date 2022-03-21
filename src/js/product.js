@@ -1,4 +1,7 @@
 import products from "./products.json";
+import orderOverview from "./templates/orderOverview.js";
+
+console.log(typeof orderOverview({ name: "jane" }));
 
 function getProductById(id) {
   const filteredProducts = products.products.filter(
@@ -44,7 +47,7 @@ function createProductDetails(product) {
 
   const productPrice = document.createElement("h4");
   productPrice.classList.add("product-price-detail");
-  const productPriceText = document.createTextNode(`${product.price}€`);
+  const productPriceText = document.createTextNode(product.price);
   productPrice.appendChild(productPriceText);
 
   const productSummary = document.createElement("p");
@@ -88,6 +91,8 @@ function createProductDetails(product) {
         id: product.id,
         variantName: variant.name,
         variantPrice: variant.price,
+        variantStatus: variant.status,
+        variantCondition: variant.condition, //could be changed if different coffee conditions get sold
       };
       localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
       dropdownButtonText.textContent = `${selectedProduct.variantName} für ${selectedProduct.variantPrice}€`;
@@ -180,6 +185,7 @@ function createProductDetails(product) {
     document
       .querySelector(".shopping-cart-modal")
       .classList.add("show-shopping-cart");
+    document.querySelector("footer").classList.add("shop-footer");
     updateShoppingCart();
     createShoppingModal();
   });
@@ -226,6 +232,8 @@ function createShoppingModal() {
       product: getProductById(shoppingCartProduct.id),
       variantName: shoppingCartProduct.variantName,
       variantPrice: shoppingCartProduct.variantPrice,
+      variantStatus: shoppingCartProduct.variantStatus,
+      variantCondition: shoppingCartProduct.variantCondition,
     })
     //Alternative to shorthand seen above:
     // {
@@ -266,15 +274,26 @@ function createShoppingModal() {
       );
       productShoppingCartName.appendChild(productShoppingCartNameText);
 
-      const productShoppingCartWeight = document.createElement("p");
-      const productShoppingCartWeightText = document.createTextNode(
+      const productShoppingCartVariantName = document.createElement("p");
+      const productShoppingCartVariantNameText = document.createTextNode(
         shoppingCartProduct.variantName
       );
-      productShoppingCartWeight.appendChild(productShoppingCartWeightText);
+      productShoppingCartVariantName.appendChild(
+        productShoppingCartVariantNameText
+      );
+
+      const productShoppingCartVariantCondition = document.createElement("p");
+      const productShoppingCartVariantConditionText = document.createTextNode(
+        shoppingCartProduct.variantCondition
+      );
+      productShoppingCartVariantCondition.appendChild(
+        productShoppingCartVariantConditionText
+      );
 
       const productShoppingCartShipping = document.createElement("p");
-      const productShoppingCartShippingText =
-        document.createTextNode("lieferbar");
+      const productShoppingCartShippingText = document.createTextNode(
+        shoppingCartProduct.variantStatus
+      );
       productShoppingCartShipping.appendChild(productShoppingCartShippingText);
 
       const productShoppingCartPrice = document.createElement("h4");
@@ -286,7 +305,8 @@ function createShoppingModal() {
       productShoppingCartImgWrapper.appendChild(productShoppingCartImg);
 
       productShoppingCartInfo.appendChild(productShoppingCartName);
-      productShoppingCartInfo.appendChild(productShoppingCartWeight);
+      productShoppingCartInfo.appendChild(productShoppingCartVariantName);
+      productShoppingCartInfo.appendChild(productShoppingCartVariantCondition);
       productShoppingCartInfo.appendChild(productShoppingCartShipping);
       productShoppingCartInfo.appendChild(productShoppingCartPrice);
 
@@ -300,14 +320,38 @@ function createShoppingModal() {
   shoppingCartProducts.forEach((shoppingCartProduct) => {
     productsShoppingCart.appendChild(shoppingCartProduct);
   });
+
+  const orderOverviewSection = document.querySelector(
+    ".order-overview-section"
+  );
+
+  const createOrderOverview = () => {
+    const subTotalCost = shoppingCartProductArray
+      .map((shoppingCartProduct) => shoppingCartProduct.variantPrice)
+      .reduce((previousValue, currentValue) => previousValue + currentValue, 0);
+    const shippingCost = 3.9;
+    const totalAmountCost = subTotalCost + shippingCost;
+
+    const orderOverviewTemplate = orderOverview({
+      subTotal: subTotalCost,
+      shippingCost: shippingCost,
+      totalAmount: totalAmountCost,
+    });
+
+    return orderOverviewTemplate;
+  };
+  orderOverviewSection.innerHTML = createOrderOverview();
 }
 
 const closeBurgerMenu = document.querySelector(".burger-menu-close");
-closeBurgerMenu.addEventListener("click", () => {
+
+function clickhandler() {
   document
     .querySelector(".shopping-cart-modal")
     .classList.remove("show-shopping-cart");
-});
+  document.querySelector("footer").classList.remove("shop-footer");
+}
+closeBurgerMenu.addEventListener("click", clickhandler);
 
 const productDetail = () => {
   const params = new URL(document.location).searchParams;

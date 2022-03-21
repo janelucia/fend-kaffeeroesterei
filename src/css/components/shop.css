@@ -17,6 +17,7 @@
   height: 100vh;
   width: 100vw;
   background-color: #e9e9e9;
+  overflow: scroll;
 }
 
 .show-shopping-cart {
@@ -107,4 +108,8 @@
 
 .burger-menu-close {
   cursor: pointer;
+}
+
+.shop-footer {
+  z-index: 3;
 }
