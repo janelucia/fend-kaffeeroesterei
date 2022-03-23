@@ -1,11 +1,10 @@
 :root {
-  /* Colors */
-  /* --div-color: red; */
+  /* TODO: line-height keine Einheit */
 
   /* Text Styles (lh = lineheight)*/
   /* h1: 96px, lh: 110px; mobile: 64px, lh: 75px */
   --h1-font-size: 6rem;
-  --h1-line-height: 1.955rem;
+  --h1-line-height: 1.5;
   --h1-font-size-m: 4rem;
   --h1-line-height-m: 0.781rem;
 
@@ -35,7 +34,7 @@
   --a-font-size: 0.88rem;
   --a-line-height: 1.125rem;
 
-  /* font-weigh */
+  /* font-weigh - TODO: t einfügen */
   --font-weigh-h: 900;
   --font-weigh-p: 400;
 }

@@ -1166,6 +1166,7 @@ __metadata:
     eslint-config-prettier: ^8.3.0
     eslint-plugin-import: ^2.25.4
     eslint-plugin-prettier: ^4.0.0
+    handlebars: ^4.7.7
     postcss: ^8.4.5
     postcss-import: ^14.0.2
     postcss-nesting: ^10.1.1
@@ -1375,7 +1376,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"handlebars@npm:^4.7.6":
+"handlebars@npm:^4.7.6, handlebars@npm:^4.7.7":
   version: 4.7.7
   resolution: "handlebars@npm:4.7.7"
   dependencies:
