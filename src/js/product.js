@@ -26,9 +26,19 @@ function createProductDetails(product) {
     );
   }
 
-  const selectedProduct = localStorage.getItem("selectedProduct");
+  const selectedProductJSON = localStorage.getItem("selectedProduct");
 
-  const selectedVariant = selectedProduct && JSON.parse(selectedProduct);
+  const selectedProduct =
+    selectedProductJSON && JSON.parse(selectedProductJSON);
+
+  function labelText(selectedProduct) {
+    return selectedProduct !== null
+      ? //gesucht wird nach dem Index im JSON - deshalb muss die variantId === Index des Variantenarrays sein.
+        `${product.variants[selectedProduct.variantId].name} für ${
+          product.variants[selectedProduct.variantId].price
+        }€`
+      : "Wie viel Kaffee brauchst du?";
+  }
 
   const productDetailTemplate = productTemplate({
     productImg: product.productImage,
@@ -38,17 +48,45 @@ function createProductDetails(product) {
     summary: product.summary,
     productDescription: product.description,
     variants: product.variants,
-    variation:
-      selectedVariant !== null
-        ? `${selectedVariant.variantName} für ${selectedVariant.variantPrice}€`
-        : "Wie viel Kaffee brauchst du?",
+    variation: labelText(selectedProduct),
+    iconImg: product.icons,
   });
 
   productDetailSection.innerHTML = productDetailTemplate;
 
-  const dropdownContentWrapper = document.querySelector(
-    ".dropdown-content-wrapper"
-  );
+  // const dropdownContentWrapper = document.querySelector(
+  //   ".dropdown-content-wrapper"
+  // );
+
+  const variantsButtons = document.querySelectorAll(".variant-button");
+  variantsButtons.forEach((variantButton) => {
+    variantButton.addEventListener("click", () => {
+      const selectedProduct = {
+        id: product.id,
+        variantId: parseInt(variantButton.getAttribute("data-id")),
+      };
+      localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
+      const dropdownButtonText = document.querySelector(".variation-wrapper");
+      dropdownButtonText.textContent = labelText(selectedProduct);
+    });
+  });
+
+  // const dropdownListItems = product.variants.forEach((variant) => {
+  //   dropdownListItemElement.addEventListener("click", (event) => {
+  //     const selectedVariantId = event.target.dataset.id;
+  //     const selectedVariant = product.variants.find();
+  //     const selectedProduct = {
+  //       id: product.id,
+  //       variantName: variant.name,
+  //       variantPrice: variant.price,
+  //       variantStatus: variant.status,
+  //       variantCondition: variant.condition, //could be changed if different coffee conditions get sold
+  //     };
+  //     localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
+  //     const dropdownButtonText = document.querySelector(".variation-wrapper");
+  //     dropdownButtonText.textContent = `${selectedProduct.variantName} für ${selectedProduct.variantPrice}€`;
+  //   });
+  // });
 
   // const dropdownListItems = product.variants.map((variant) => {
   //   const dropdownListItemElement = document.createElement("button");
@@ -83,57 +121,57 @@ function createProductDetails(product) {
   //   dropdownContentWrapper.appendChild(dropdownListItem);
   // });
 
-  const shoppingCartButtonWrapper = document.createElement("div");
-  shoppingCartButtonWrapper.classList.add("shop-button-wrapper");
-  const shoppingCartButton = document.createElement("btn");
-  shoppingCartButton.classList.add("shop-button");
-  const shoppingCartButtonText = document.createTextNode("In den Warenkorb");
-  shoppingCartButton.appendChild(shoppingCartButtonText);
-  shoppingCartButtonWrapper.appendChild(shoppingCartButton);
+  // const shoppingCartButtonWrapper = document.createElement("div");
+  // shoppingCartButtonWrapper.classList.add("shop-button-wrapper");
+  // const shoppingCartButton = document.createElement("btn");
+  // shoppingCartButton.classList.add("shop-button");
+  // const shoppingCartButtonText = document.createTextNode("In den Warenkorb");
+  // shoppingCartButton.appendChild(shoppingCartButtonText);
+  // shoppingCartButtonWrapper.appendChild(shoppingCartButton);
 
-  const productIconsWrapper = document.createElement("div");
-  productIconsWrapper.classList.add("product-icons-wrapper-detail");
+  // const productIconsWrapper = document.createElement("div");
+  // productIconsWrapper.classList.add("product-icons-wrapper-detail");
 
-  const icons = (icon) => {
-    const productIconWrapper = document.createElement("div");
-    productIconWrapper.classList.add("product-icon-wrapper-detail");
-    const productIconImgWrapper = document.createElement("div");
-    productIconImgWrapper.classList.add("product-icon-img-wrapper-detail");
-    const iconImg = document.createElement("img");
-    iconImg.classList.add("product-icon-detail");
-    iconImg.setAttribute("src", icon.path);
-    productIconImgWrapper.appendChild(iconImg);
-    const iconDescription = document.createElement("p");
-    const iconDescriptionText = document.createTextNode(icon.description);
-    iconDescription.appendChild(iconDescriptionText);
-    productIconWrapper.appendChild(productIconImgWrapper);
-    productIconWrapper.appendChild(iconDescription);
-    productIconsWrapper.appendChild(productIconWrapper);
-  };
+  // const icons = (icon) => {
+  //   const productIconWrapper = document.querySelectorAll(
+  //     ".product-icon-wrapper-detail"
+  //   );
+  //   const productIconImgWrapper = document.querySelectorAll(
+  //     ".product-icon-img-wrapper-detail"
+  //   );
+  //   const iconImg = document.createElement("img");
+  //   iconImg.classList.add("product-icon-detail");
+  //   iconImg.setAttribute("src", icon.path);
+  //   productIconImgWrapper.appendChild(iconImg);
+  //   const iconDescription = document.createElement("p");
+  //   const iconDescriptionText = document.createTextNode(icon.description);
+  //   iconDescription.appendChild(iconDescriptionText);
+  //   productIconWrapper.appendChild(productIconImgWrapper);
+  //   productIconWrapper.appendChild(iconDescription);
+  // };
 
-  if (product.icons) {
-    product.icons.forEach((iconName) => {
-      icons(products.commons.icons[iconName]);
-    });
-  }
+  // if (product.icons) {
+  //   product.icons.forEach((iconName) => {
+  //     icons(products.commons.icons[iconName]);
+  //   });
+  // }
 
-  productDetailSection.appendChild(shoppingCartButtonWrapper);
-  productDetailSection.appendChild(productIconsWrapper);
-
-  // TODO: queryselector als Konstante rausziehen
   const dropdownButton = document.querySelector(".dropbtn");
+  const dropdownContentWrapper = document.querySelector(
+    ".dropdown-content-wrapper"
+  );
+  const btnArrow = document.querySelector(".btn-arrow");
   dropdownButton.addEventListener("click", () => {
-    document
-      .querySelector(".dropdown-content-wrapper")
-      .classList.toggle("show");
-    document.querySelector(".btn-arrow").classList.toggle("btn-up");
+    dropdownContentWrapper.classList.toggle("show");
+    btnArrow.classList.toggle("btn-up");
   });
 
+  const shoppingCartButton = document.querySelector(".shop-button");
+  const shoppingCartModal = document.querySelector(".shopping-cart-modal");
+  const footer = document.querySelector("footer");
   shoppingCartButton.addEventListener("click", () => {
-    document
-      .querySelector(".shopping-cart-modal")
-      .classList.add("show-shopping-cart");
-    document.querySelector("footer").classList.add("shop-footer");
+    shoppingCartModal.classList.add("show-shopping-cart");
+    footer.classList.add("shop-footer");
     updateShoppingCart();
     createShoppingModal();
   });
@@ -179,10 +217,7 @@ function createShoppingModal() {
   const shoppingCartProductArray = localStorageShoppingCart.map(
     (shoppingCartProduct) => ({
       product: getProductById(shoppingCartProduct.id),
-      variantName: shoppingCartProduct.variantName,
-      variantPrice: shoppingCartProduct.variantPrice,
-      variantStatus: shoppingCartProduct.variantStatus,
-      variantCondition: shoppingCartProduct.variantCondition,
+      variantId: shoppingCartProduct.variantId,
     })
     //Alternative to shorthand seen above:
     // {
@@ -200,19 +235,45 @@ function createShoppingModal() {
 
   const shoppingCartProducts = shoppingCartProductArray.map(
     (shoppingCartProduct) => {
+      const variant =
+        shoppingCartProduct.product.variants[shoppingCartProduct.variantId];
       return shoppingModalTemplate({
         productImg: shoppingCartProduct.product.productImage,
         productImgAlt: shoppingCartProduct.product.altText,
         productName: shoppingCartProduct.product.productName,
-        variantName: shoppingCartProduct.variantName,
-        variantCondition: shoppingCartProduct.variantCondition,
-        variantStatus: shoppingCartProduct.variantStatus,
-        variantPrice: shoppingCartProduct.variantPrice,
+        variantName: variant.name,
+        variantCondition: variant.condition,
+        variantStatus: variant.status,
+        variantPrice: variant.price,
       });
     }
   );
 
   productsShoppingCart.innerHTML = shoppingCartProducts.join("");
+  const childProductsShoppingCart = productsShoppingCart.querySelectorAll(
+    ".shoppingcart-product-wrapper"
+  );
+
+  childProductsShoppingCart.forEach((shoppingCartProduct, index) => {
+    const removeButton = shoppingCartProduct.querySelector(
+      ".shoppingcart-product-info svg"
+    );
+    removeButton.addEventListener("click", () => {
+      //TODO: don't mutate localStorageShoppingCart
+      localStorageShoppingCart.splice(index, 1, null);
+      console.log(localStorageShoppingCart);
+      localStorage.setItem(
+        "shoppingCart",
+        JSON.stringify(
+          localStorageShoppingCart.filter(
+            (localStorageShoppingCartElement) =>
+              localStorageShoppingCartElement !== null
+          )
+        )
+      );
+      shoppingCartProduct.remove();
+    });
+  });
 
   // shoppingCartProducts.forEach((shoppingCartProduct) => {
   //   productsShoppingCart.innerHTML = shoppingCartProducts;

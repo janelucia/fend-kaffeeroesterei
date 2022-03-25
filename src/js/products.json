@@ -25,6 +25,7 @@
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
+          "variantId": 0,
           "name": "500g",
           "weight": 500,
           "price": 6.99,
@@ -32,6 +33,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 1,
           "name": "1kg",
           "weight": 1000,
           "price": 9.99,
@@ -39,6 +41,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 2,
           "name": "5kg",
           "weight": 5000,
           "price": 46.99,
@@ -58,6 +61,7 @@
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
+          "variantId": 0,
           "name": "500g",
           "weight": 500,
           "price": 5.99,
@@ -65,6 +69,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 1,
           "name": "1kg",
           "weight": 1000,
           "price": 8.99,
@@ -72,6 +77,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 2,
           "name": "5kg",
           "weight": 5000,
           "price": 42.99,
@@ -91,6 +97,7 @@
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
+          "variantId": 0,
           "name": "500g",
           "weight": 500,
           "price": 4.99,
@@ -98,6 +105,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 1,
           "name": "1kg",
           "weight": 1000,
           "price": 7.99,
@@ -105,6 +113,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 2,
           "name": "5kg",
           "weight": 5000,
           "price": 39.99,
@@ -124,6 +133,7 @@
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
+          "variantId": 0,
           "name": "500g",
           "weight": 500,
           "price": 6.99,
@@ -131,6 +141,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 1,
           "name": "1kg",
           "weight": 1000,
           "price": 9.99,
@@ -138,6 +149,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 2,
           "name": "5kg",
           "weight": 5000,
           "price": 46.99,
@@ -157,6 +169,7 @@
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
+          "variantId": 0,
           "name": "500g",
           "weight": 500,
           "price": 5.99,
@@ -164,6 +177,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 1,
           "name": "1kg",
           "weight": 1000,
           "price": 8.99,
@@ -171,6 +185,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 2,
           "name": "5kg",
           "weight": 5000,
           "price": 42.99,
@@ -190,6 +205,7 @@
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
+          "variantId": 0,
           "name": "500g",
           "weight": 500,
           "price": 4.99,
@@ -197,6 +213,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 1,
           "name": "1kg",
           "weight": 1000,
           "price": 7.99,
@@ -204,6 +221,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 2,
           "name": "5kg",
           "weight": 5000,
           "price": 39.99,
@@ -223,6 +241,7 @@
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
+          "variantId": 0,
           "name": "500g",
           "weight": 500,
           "price": 6.9,
@@ -230,6 +249,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 1,
           "name": "1kg",
           "weight": 1000,
           "price": 9.99,
@@ -237,6 +257,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 2,
           "name": "5kg",
           "weight": 5000,
           "price": 46.99,
@@ -256,6 +277,7 @@
       "icons": ["coffeeBeans", "frenchPress", "coffeeShovel"],
       "variants": [
         {
+          "variantId": 0,
           "name": "500g",
           "weight": 500,
           "price": 5.99,
@@ -263,6 +285,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 1,
           "name": "1kg",
           "weight": 1000,
           "price": 8.99,
@@ -270,6 +293,7 @@
           "condition": "gemahlen"
         },
         {
+          "variantId": 2,
           "name": "5kg",
           "weight": 5000,
           "price": 42.99,

@@ -25,7 +25,7 @@ let templateString = `
         <div class="dropdown-content-wrapper">
             {{#each variants}}
                  
-                <button data-id="{{this.id}}">{{this.name}} für {{this.price}}€</button>
+                <button class="variant-button" data-id="{{this.variantId}}">{{this.name}} für {{this.price}}€</button>
                
             {{/each}}
         </div>
@@ -38,11 +38,11 @@ let templateString = `
     <div class="product-icons-wrapper-detail">
         <div class="product-icon-wrapper-detail">
             <div class="product-icon-img-wrapper-detail">
-             <img class="product-icon-detail" src="{{iconImg}}" alt="{{iconImgAlt}}">
+             {{!-- <img class="product-icon-detail" src="{{iconImg}}" alt="{{iconImgAlt}}"> --}}
             </div>
-            <p>
+            {{!-- <p>
                 {{iconDescription}}
-            </p>
+            </p> --}}
         </div>
     </div>
 </div>
