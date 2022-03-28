@@ -6,16 +6,12 @@
   <body>
     <header>
       <div class="hero">
-        <nav>
-          {{> head-row }}
-        </nav>
-          <div class="hero-title">
-            <h1>Rustica</h1>
-            <h2>Bio und Fair seit 1991</h2>
-          </div>
-          <div>
-            {{> shop-button }}
-          </div>
+        <nav>{{> head-row home="true"}}</nav>
+        <div class="hero-title">
+          <h1>Rustica</h1>
+          <h2>Bio und Fair seit 1991</h2>
+        </div>
+        <div>{{> shop-button }}</div>
       </div>
     </header>
     <main>
@@ -23,30 +19,41 @@
         {{> cafe-informationen}}
         <div class="img-seite-rechts">
           <!-- <img id="kaffeeshop-rustica" src="images/coffee-shop.jpg" alt="Kaffeeshop Rustica"> -->
-          <img src="images/coffee-shop.jpg" srcset="images/mobile/coffee-shop-m.jpg 241w, images/desktop/coffee-shop-d.jpg 607w, images/coffee-shop.jpg 2000w" 
-          sizes="(min-width: 2500px) 2000px, (min-width: 700px) 607px, (min-width: 300px) 241px"
-          alt="Kaffeeshop Rustica">
+          <img
+            src="images/coffee-shop.jpg"
+            srcset="
+              images/mobile/coffee-shop-m.jpg   241w,
+              images/desktop/coffee-shop-d.jpg  607w,
+              images/coffee-shop.jpg           2000w
+            "
+            sizes="(min-width: 2500px) 2000px, (min-width: 700px) 607px, (min-width: 300px) 241px"
+            alt="Kaffeeshop Rustica"
+          />
         </div>
       </div>
       <div class="information">
         <div>
           <h3>Bio und Fair</h3>
           <p class="content-p">
-            Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das alles in bester Bio Qualität
+            Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+            Konsonantien leben die Blindtexte. Weit hinten, hinter den
+            Wortbergen, fern der Länder Vokalien und Konsonantien leben die
+            Blindtexte. Und das alles in bester Bio Qualität
           </p>
           <a href="origin.html">mehr</a>
         </div>
         <div id="kaffeepflanze">
-          <img src="images/coffee-plant.jpg" alt="Foto von einer Kaffeepflanze">
+          <img
+            src="images/coffee-plant.jpg"
+            alt="Foto von einer Kaffeepflanze"
+          />
         </div>
       </div>
       <div class="kaffeesorten">
         <h2>Entdecke unsere Kaffee Sorten</h2>
         <div class="kaffeesorten-flex">
-          {{> kaffeesorten }}
-          {{> kaffeesorten }}
-          {{> kaffeesorten }}
-          {{> kaffeesorten }}
+          {{> kaffeesorten }} {{> kaffeesorten }} {{> kaffeesorten }} {{>
+          kaffeesorten }}
         </div>
         <div class="shop-button2-div">
           <a class="shop-button2" href="shop.html">alle Produkte</a>
@@ -55,7 +62,9 @@
       <div class="origin">
         <h3>Herkunft</h3>
         <p>
-          Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das alles in bester Bio Qualität
+          Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+          Konsonantien leben die Blindtexte. Und das alles in bester Bio
+          Qualität
         </p>
         <a href="">mehr</a>
       </div>
@@ -63,33 +72,36 @@
         <h3>Das steckt drin</h3>
         <div class="das-steckt-drin-flex">
           <div class="das-steckt-drin-img">
-            <img src="images/coffee-costa-rica-transparent.png" alt="Costa Rica Kaffee">
+            <img
+              src="images/coffee-costa-rica-transparent.png"
+              alt="Costa Rica Kaffee"
+            />
           </div>
           <div class="das-steckt-drin-icons">
             <div class="das-steckt-drin-icon-einzeln">
-              <img src="images/icons/icon-coffee-cup.svg" alt="Heiße Tasse">
+              <img src="images/icons/icon-coffee-cup.svg" alt="Heiße Tasse" />
               <p>Bester Geschmack</p>
             </div>
             <div class="das-steckt-drin-icon-einzeln">
-              <img src="images/icons/icon-coffee-shovel.svg" alt="Kaffee Schaufel"> 
+              <img
+                src="images/icons/icon-coffee-shovel.svg"
+                alt="Kaffee Schaufel"
+              />
               <p>Fair gehandelt</p>
             </div>
             <div class="das-steckt-drin-icon-einzeln">
-              <img src="images/icons/icon-coffee-plant.svg" alt="Kaffee Pflanze">    
+              <img
+                src="images/icons/icon-coffee-plant.svg"
+                alt="Kaffee Pflanze"
+              />
               <p>Bio Qualität</p>
             </div>
-            <div class="das-steckt-drin-shop-button">
-              {{> shop-button }}
-            </div>
+            <div class="das-steckt-drin-shop-button">{{> shop-button }}</div>
           </div>
         </div>
       </div>
-      <div class="komm-vorbei">
-        {{> komm-vorbei }}
-      </div>
+      <div class="komm-vorbei">{{> komm-vorbei }}</div>
     </main>
-    <footer>
-      {{> footer home="true"}}
-    </footer>
+    <footer>{{> footer home="true"}}</footer>
   </body>
 </html>

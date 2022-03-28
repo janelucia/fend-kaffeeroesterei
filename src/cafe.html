@@ -5,34 +5,55 @@
   </head>
   <body>
     <header class="header-cafe">
-      <nav>
-        {{> head-row active_cafe=true}}
-      </nav>
+      <nav>{{> head-row active_cafe=true cafe="true"}}</nav>
     </header>
     <main>
       <div class="cafe-informationen">
         {{> cafe-informationen}}
         <div class="img-seite-rechts">
-          <img src="images/coffee-machine.jpg" alt="coffee-machine">
+          <img src="images/coffee-machine.jpg" alt="coffee-machine" />
         </div>
       </div>
       <div class="information-middle">
         <h3>Frisches Gebäck von nebenan</h3>
-        <p>Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf. Wehmütig lief ihm eine rhetorische Frage über die Wange, dann setzte es seinen Weg fort. Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie zigmal umgeschrieben worden und alles, was von ihrem Ursprung noch übrig wäre, sei das Wort "und" und das Blindtextchen solle umkehren und wieder in sein eigenes, sicheres Land zurückkehren.</p>
+        <p>
+          Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es
+          einen letzten Blick zurück auf die Skyline seiner Heimatstadt
+          Buchstabhausen, die Headline von Alphabetdorf. Wehmütig lief ihm eine
+          rhetorische Frage über die Wange, dann setzte es seinen Weg fort.
+          Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo
+          sie herkäme wäre sie zigmal umgeschrieben worden und alles, was von
+          ihrem Ursprung noch übrig wäre, sei das Wort "und" und das
+          Blindtextchen solle umkehren und wieder in sein eigenes, sicheres Land
+          zurückkehren.
+        </p>
       </div>
       <div class="gallery">
-        <img src="images/gallery/baked-goods.jpg" alt="baked goods">
-        <img src="images/gallery/coffee-art.jpg" alt="coffee art">
-        <img src="images/gallery/coffee-machine2.jpg" alt="espresso in the making">
-        <img src="images/gallery/coffee-breakfast.jpg" alt="breakfast">
-        <img src="images/gallery/coffee-art2.jpg" alt="demonstration of coffee art">
-        <img src="images/gallery/coffee-price-list.jpg" alt="overview of prices at the café">
-        <img src="images/gallery/coffee-sign.jpg" alt="coffee in letters as a sign">
-        <img src="images/header-coffee.jpg" alt="3 cups of various coffee types">
+        <img src="images/gallery/baked-goods.jpg" alt="baked goods" />
+        <img src="images/gallery/coffee-art.jpg" alt="coffee art" />
+        <img
+          src="images/gallery/coffee-machine2.jpg"
+          alt="espresso in the making"
+        />
+        <img src="images/gallery/coffee-breakfast.jpg" alt="breakfast" />
+        <img
+          src="images/gallery/coffee-art2.jpg"
+          alt="demonstration of coffee art"
+        />
+        <img
+          src="images/gallery/coffee-price-list.jpg"
+          alt="overview of prices at the café"
+        />
+        <img
+          src="images/gallery/coffee-sign.jpg"
+          alt="coffee in letters as a sign"
+        />
+        <img
+          src="images/header-coffee.jpg"
+          alt="3 cups of various coffee types"
+        />
       </div>
-      <div class="komm-vorbei">
-        {{> komm-vorbei }}
-      </div>
+      <div class="komm-vorbei">{{> komm-vorbei }}</div>
     </main>
     <footer>
       {{> footer cafe="true"}}

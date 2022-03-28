@@ -3,14 +3,17 @@
     "icons": {
       "coffeeBeans": {
         "path": "../images/icons/icon-coffee-beans.svg",
+        "alt": "Kaffeebohnen",
         "description": "Mild geröstet"
       },
       "frenchPress": {
         "path": "../images/icons/icon-french-press.svg",
+        "alt": "French Press",
         "description": "Für French Press"
       },
       "coffeeShovel": {
         "path": "../images/icons/icon-coffee-shovel.svg",
+        "alt": "Kaffeeschaufel",
         "description": "gemahlen oder als Bohne"
       }
     }

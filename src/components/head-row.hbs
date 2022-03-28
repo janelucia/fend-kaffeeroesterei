@@ -1,6 +1,6 @@
 <div class="mobile-navi">
   <div class="header-logo">
-    <a href="index.html">
+    <a {{#if active_shop}} href="../index.html" {{else}} href="index.html" {{/if}}>
       <svg
         viewBox="0 0 145 145"
         fill="currentColor"
@@ -29,7 +29,6 @@
         stroke-width="3"
       ></path>
     </svg>
-
   </div>
   <div class="header-links">
     <a class="header-link {{#if active_cafe}}active{{/if}}" href="cafe.html">Das Café</a>
@@ -50,4 +49,11 @@
       ></path>
     </svg>
   </div>
+</div>
+<div class="mobile-header-menu">
+  {{#unless home}} <a {{#if shop}} href="../index.html" {{else}} href="index.html" {{/if}}> Home</a> {{/unless}}
+  {{#unless cafe}} <a href="cafe.html">Das Café</a> {{/unless}}
+  {{#unless origin}} <a href="origin.html">Herkunft</a>{{/unless}}
+  {{#unless shop}} <a href="shop.html">Shop</a>{{/unless}}
+  {{#unless shoppingcart}} <a href="shop.html">Warenkorb</a>{{/unless}}
 </div>

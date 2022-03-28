@@ -40,6 +40,13 @@ function createProductDetails(product) {
       : "Wie viel Kaffee brauchst du?";
   }
 
+  let iconObjects = [];
+  if (product.icons) {
+    iconObjects = product.icons.map(
+      (iconName) => products.commons.icons[iconName]
+    );
+  }
+
   const productDetailTemplate = productTemplate({
     productImg: product.productImage,
     productImgAlt: product.altText,
@@ -47,16 +54,12 @@ function createProductDetails(product) {
     productPrice: product.price,
     summary: product.summary,
     productDescription: product.description,
-    variants: product.variants,
+    variant: product.variants,
     variation: labelText(selectedProduct),
-    iconImg: product.icons,
+    icon: iconObjects,
   });
 
   productDetailSection.innerHTML = productDetailTemplate;
-
-  // const dropdownContentWrapper = document.querySelector(
-  //   ".dropdown-content-wrapper"
-  // );
 
   const variantsButtons = document.querySelectorAll(".variant-button");
   variantsButtons.forEach((variantButton) => {
@@ -70,91 +73,6 @@ function createProductDetails(product) {
       dropdownButtonText.textContent = labelText(selectedProduct);
     });
   });
-
-  // const dropdownListItems = product.variants.forEach((variant) => {
-  //   dropdownListItemElement.addEventListener("click", (event) => {
-  //     const selectedVariantId = event.target.dataset.id;
-  //     const selectedVariant = product.variants.find();
-  //     const selectedProduct = {
-  //       id: product.id,
-  //       variantName: variant.name,
-  //       variantPrice: variant.price,
-  //       variantStatus: variant.status,
-  //       variantCondition: variant.condition, //could be changed if different coffee conditions get sold
-  //     };
-  //     localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
-  //     const dropdownButtonText = document.querySelector(".variation-wrapper");
-  //     dropdownButtonText.textContent = `${selectedProduct.variantName} für ${selectedProduct.variantPrice}€`;
-  //   });
-  // });
-
-  // const dropdownListItems = product.variants.map((variant) => {
-  //   const dropdownListItemElement = document.createElement("button");
-  // dropdownListItemElement.addEventListener("click", (event) => {
-  //   const selectedVariantId = event.target.dataset.id;
-  //   const selectedVariant = product.variants.find()
-  //   this.dataset.id
-  //   const selectedProduct = {
-  //     id: product.id,
-  //     variantName: variant.name,
-  //     variantPrice: variant.price,
-  //     variantStatus: variant.status,
-  //     variantCondition: variant.condition, //could be changed if different coffee conditions get sold
-  //   };
-  //     localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
-  //     const dropdownButtonText = document.querySelector(".variation-wrapper");
-  //     dropdownButtonText.textContent = `${selectedProduct.variantName} für ${selectedProduct.variantPrice}€`;
-  //   });
-
-  //   const dropdownListItemNameAndPrice = document.createTextNode(
-  //     `${variant.name} für ${variant.price}€`
-  //   );
-
-  //   console.log(dropdownListItemNameAndPrice);
-
-  //   dropdownListItemElement.appendChild(dropdownListItemNameAndPrice);
-
-  //   return dropdownListItemElement;
-  // });
-
-  // dropdownListItems.forEach((dropdownListItem) => {
-  //   dropdownContentWrapper.appendChild(dropdownListItem);
-  // });
-
-  // const shoppingCartButtonWrapper = document.createElement("div");
-  // shoppingCartButtonWrapper.classList.add("shop-button-wrapper");
-  // const shoppingCartButton = document.createElement("btn");
-  // shoppingCartButton.classList.add("shop-button");
-  // const shoppingCartButtonText = document.createTextNode("In den Warenkorb");
-  // shoppingCartButton.appendChild(shoppingCartButtonText);
-  // shoppingCartButtonWrapper.appendChild(shoppingCartButton);
-
-  // const productIconsWrapper = document.createElement("div");
-  // productIconsWrapper.classList.add("product-icons-wrapper-detail");
-
-  // const icons = (icon) => {
-  //   const productIconWrapper = document.querySelectorAll(
-  //     ".product-icon-wrapper-detail"
-  //   );
-  //   const productIconImgWrapper = document.querySelectorAll(
-  //     ".product-icon-img-wrapper-detail"
-  //   );
-  //   const iconImg = document.createElement("img");
-  //   iconImg.classList.add("product-icon-detail");
-  //   iconImg.setAttribute("src", icon.path);
-  //   productIconImgWrapper.appendChild(iconImg);
-  //   const iconDescription = document.createElement("p");
-  //   const iconDescriptionText = document.createTextNode(icon.description);
-  //   iconDescription.appendChild(iconDescriptionText);
-  //   productIconWrapper.appendChild(productIconImgWrapper);
-  //   productIconWrapper.appendChild(iconDescription);
-  // };
-
-  // if (product.icons) {
-  //   product.icons.forEach((iconName) => {
-  //     icons(products.commons.icons[iconName]);
-  //   });
-  // }
 
   const dropdownButton = document.querySelector(".dropbtn");
   const dropdownContentWrapper = document.querySelector(
@@ -275,10 +193,6 @@ function createShoppingModal() {
     });
   });
 
-  // shoppingCartProducts.forEach((shoppingCartProduct) => {
-  //   productsShoppingCart.innerHTML = shoppingCartProducts;
-  // });
-
   const orderOverviewSection = document.querySelector(
     ".order-overview-section"
   );
@@ -299,18 +213,18 @@ function createShoppingModal() {
     return orderOverviewTemplate;
   };
   orderOverviewSection.innerHTML = createOrderOverview();
-}
 
-const closeBurgerMenu = document.querySelector(".burger-menu-close");
+  function clickhandler() {
+    document
+      .querySelector(".shopping-cart-modal")
+      .classList.remove("show-shopping-cart");
+    document.querySelector("footer").classList.remove("shop-footer");
+  }
 
-//TODO - auch hier den querySelector als Konstante speichern
-function clickhandler() {
   document
-    .querySelector(".shopping-cart-modal")
-    .classList.remove("show-shopping-cart");
-  document.querySelector("footer").classList.remove("shop-footer");
+    .querySelector(".burger-menu-close")
+    .addEventListener("click", clickhandler);
 }
-closeBurgerMenu.addEventListener("click", clickhandler);
 
 const productDetail = () => {
   const params = new URL(document.location).searchParams;

@@ -12,3 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
     productDetail();
   }
 });
+
+document.querySelector(".header-menu").addEventListener("click", () => {
+  document
+    .querySelector(".mobile-header-menu")
+    .classList.toggle("header-menu-show");
+});

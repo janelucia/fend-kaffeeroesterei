@@ -1,125 +1,160 @@
+.mobile-navi {
+  position: fixed;
+  top: 10px;
+  left: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
 .header-logo {
-   position: fixed;
-   left: 24px;
-   top: 10px;
-   
-   & svg {
-      width: 35px;
-      height: 35px;
-   }
+  & svg {
+    width: 35px;
+    height: 35px;
+  }
 
-   & svg path {
-      fill: white;
-   }
+  & svg path {
+    fill: white;
+  }
 
-   @media (min-width: 992px) {
-      left: 103px;
-   }
+  @media (min-width: 992px) {
+    left: 103px;
+  }
 }
 
 .header-menu {
-   position: fixed;
-   width: 32px;
-   right: 25.5px;
-   top: 21px;
+  width: 32px;
 
-   & svg path {
-      color: white;
-   }
+  & svg path {
+    color: white;
+  }
 
-   @media (min-width: 992px) {
-      display: none;
-   }
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+.mobile-header-menu {
+  display: none;
+}
+
+.header-menu-show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  /*TODO transition from right*/
+  transition: ease 5s;
+
+  & body {
+    overflow: hidden;
+  }
+
+  & a {
+    color: white;
+    font-size: xx-large;
+    text-decoration: none;
+  }
 }
 
 .header-black .header-menu {
-   & svg path {
-      stroke: black;
-   }
+  & svg path {
+    stroke: black;
+  }
 }
 
 .cafe-rustica {
-   position: relative;
-   object-fit: cover;
+  position: relative;
+  object-fit: cover;
 }
 
 .header-links {
-   display: none;
+  display: none;
 
-   @media (min-width: 992px) {
-      display: inline;
-      position: fixed;
-      right: 150px;
-      top: 18px;
+  @media (min-width: 992px) {
+    display: inline;
+    position: fixed;
+    right: 150px;
+    top: 18px;
 
-      & a {
-         color: white;
-         margin-left: 69px;
-      }
+    & a {
+      color: white;
+      margin-left: 69px;
+    }
 
-      & a:hover {
-         text-decoration: none; 
-      }
+    & a:hover {
+      text-decoration: none;
+    }
 
-      &a:focus {
-         color: red;
-      }
-   }
+    &a:focus {
+      color: red;
+    }
+  }
 }
 
 .header-link:active {
-   color: black;
+  color: black;
 }
 
 .active {
-   text-decoration: none;
+  text-decoration: none;
 }
 
 .mobile-navi .header-shop-icon {
-   display: none;
+  display: none;
 
-   @media (min-width: 992px) {
-      display: inline;
-      height: 20px;
-      position: fixed;
-      right: 100px;
-      top: 17px;
-      width: 17px;
+  @media (min-width: 992px) {
+    display: inline;
+    height: 20px;
+    position: fixed;
+    right: 100px;
+    top: 17px;
+    width: 17px;
 
-      & svg path {
-         fill: transparent;
-         stroke: white;
-      }
-   }
+    & svg path {
+      fill: transparent;
+      stroke: white;
+    }
+  }
 }
 
 .header-black .header-shop-icon {
-   & svg path {
-      stroke: black;
-   }
+  & svg path {
+    stroke: black;
+  }
 }
 
 .header-black {
-   & svg path {
-      fill: black;
-   }
+  & svg path {
+    fill: black;
+  }
 
-   & a {
-      color: black;
-   }
+  & a {
+    color: black;
+  }
 }
 
-
 .header-cafe {
-   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/coffee-shop.jpg);
-   background-position: center;
-   background-size: cover;
-   height: 40vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../images/coffee-shop.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
 }
 
 .header-origin {
-   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/header-coffee-beans-hand.jpg);
-   background-position: center;
-   background-size: cover;
-   height: 40vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../images/header-coffee-beans-hand.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
 }
